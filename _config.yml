@@ -1,0 +1,72 @@
+#-------------------------------
+# General Site Settings
+
+title: Blog do JUG (Java User Group) Java Bahia 
+description: Java Bahia é um JUG (Java User Group) criado pela comunidade Java de Salvador/Bahia, mas não exclusivo a eles. O objetivo é falarmos sobre tecnologia e desenvolvimento em geral, principalmente sobre utilização de Java como plataforma de solução para construção de software.
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+#-------------------------------
+# About Section
+author-name:   Java Bahia
+author-avatar: 09.jpg
+
+
+#-------------------------------
+# Contact links
+facebook:  https://facebook.com/javabahia # Add your Facebook handle
+twitter:   https://twitter.com/javabahia # Add your Facebook handle
+#instagram: https://www.instagram.com/ # Add your Facebook handle
+#pinterest: https://www.pinterest.com/ # Add your Facebook handle
+
+
+#-------------------------------
+# Comment Section (Disqus)
+disqus-identifier: https-javabahia-github-io # Add your shortname for Disqus Comment. For example mr-brown
+
+
+#-------------------------------
+# Instagram Feed
+instafeed: true # To enable the instafeed, use the value true. To turn off use the value false.
+
+
+#-------------------------------
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1.
+
+
+#-------------------------------
+# Newsletter
+mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+
+
+#-------------------------------
+# Build settings
+markdown: kramdown
+permalink: ':title/'
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+
+paginate: 7
+paginate_path: "/page/:num"
+
+include:
+  - _pages
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+#-------------------------------
+# Exclude from processing.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
