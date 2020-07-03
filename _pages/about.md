@@ -17,6 +17,12 @@ Atualmente, as atividades do JUG tem sido organizada pelas pessoas abaixo, mas i
 <br/> <small>Membro desde 2005</small>,
 Just a guy who loves what he does:  Software Engineer @java_champions, @dev_champions,JCP EC, Duke Choice Award, expert in JSRs @theasf, @EclipseFdn
 
+#### Mario Jorge
+<a href="https://twitter.com/mariojp" target="_blank" alt="Twitter"><i class="ion ion-logo-twitter"></i></a>
+<a href="https://www.linkedin.com/in/mariojp/" target="_blank" alt="Linkedin"><i class="ion ion-logo-linkedin"></i></a>
+<a href="http://github.com/mariojp" target="_blank" alt="Github"><i class="ion ion-logo-github"></i></a>
+<br/> <small>Membro desde 2005</small>, Analista de Sistemas
+
 #### Duílio Andrade
 <a href="https://twitter.com/andradeduilio" target="_blank" alt="Twitter"><i class="ion ion-logo-twitter"></i></a>
 <a href="https://www.linkedin.com/in/duilioandrade/" target="_blank" alt="Linkedin"><i class="ion ion-logo-linkedin"></i></a>
