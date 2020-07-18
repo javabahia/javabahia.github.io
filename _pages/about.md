@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sobre nós
-image: java-bahia2.jpg
+image: javaba.png
 permalink: /about/
 ---
 

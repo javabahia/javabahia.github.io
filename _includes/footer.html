@@ -23,12 +23,22 @@
               <li><a href="{{ site.twitter }}">Twitter</a></li>
               {% else %} {% endif %}
 
-              {% if site.instagram %}
-              <li><a href="{{ site.instagram }}">Instagram</a></li>
+              {% if site.youtube %}
+              <li class="social-profiles-item">
+                <a href="{{ site.youtube }}">Youtube</i></a>
+              </li>
               {% else %} {% endif %}
-
-              {% if site.pinterest %}
-              <li><a href="{{ site.pinterest }}">Pinterest</a></li>
+        
+              {% if site.rss %}
+              <li class="social-profiles-item">
+                <a href="{{ site.rss }}">RSS</a>
+              </li>
+              {% else %} {% endif %}
+        
+              {% if site.podcast %}
+              <li class="social-profiles-item">
+                <a href="{{ site.podcast }}">Podcast</a>
+              </li>
               {% else %} {% endif %}
             </ul>
           </div>

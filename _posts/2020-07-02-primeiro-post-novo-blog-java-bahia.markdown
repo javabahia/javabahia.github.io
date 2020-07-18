@@ -2,7 +2,7 @@
 layout: post
 title:  "Primeiro post Java Bahia usando Github Pages e Jekyll"
 date:   2020-07-02 20:00:00 +0300
-image:  java-bahia.jpg
+image:  javaba.png
 author: Antonio Lazaro
 tags:   [Jekyll, github, javabahia,]
 ---
