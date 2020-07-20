@@ -23,7 +23,12 @@ layout: default
 						<div class="article-content">
 							<div class="article-info">
 								<div class="article-date">
-									<span class="date"><time datetime="{{ post.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}{{ post.date | date: date_format }}</time></span>
+									Escrito por {{post.author}} em 
+									<span class="date">
+										<time datetime="{{ post.date | date_to_xmlschema }}">
+											{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}{{ post.date | date: date_format }}</time>
+										</span>
+										
 								</div>
 								<div class="article-tag">
 								{% if post.tags.size >= 1 %}
