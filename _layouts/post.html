@@ -27,15 +27,23 @@ layout: default
 					<h1 class="post-title">{{ page.title | escape }}</h1>
 					<div class="post-info">
 						<div class="post-info-author">
-							<div class="info-author-avatar" style="background-image: url({{"/img/" | prepend: site.baseurl | append : site.author-avatar}})"></div>
+							<span class="info-author-name">Aproximadamente
+								{% assign words = content | number_of_words %}
+								{% if words < 360 %}
+								  1 minuto de leitura
+								{% else %}
+									{{ words | divided_by:180 }} minutos de leitura
+								{% endif %}</span>
+						</div>
+						<div class="post-info-author">
 							<span>escrito por</span>
 							<span class="info-author-name">{{page.author | site.author-name}}</span>
 						</div>
 						<div class="post-date">
 							<span>
-								<time datetime="{{ page.date | date_to_xmlschema }}">{{page.date | date: '%b %d, %Y'}}</time>
+								<time datetime="{{ page.date | date_to_xmlschema }}">{{page.date | date: '%b %d, %Y'}} </time>
 							</span>
-						</div>
+						</div>						
 					</div>
 				</div>
 
