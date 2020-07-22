@@ -187,3 +187,5 @@ Algumas ferramentas como Sonar, Checkstyle, Findbugs são utilizadas para análi
 ## Conclusão   
 
 Esse post foi uma primeira colaboração de alguém externo ao Java Bahia e que gostaríamos de apresentar nossa idéia e forma de fazer comunidade. Comunidade não é competição, a palavra chave é colaboração.
+
+O link para palestra pode ser encontrado em: https://bit.ly/2CUpego
