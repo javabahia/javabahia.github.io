@@ -4,7 +4,7 @@ title:  "Como fazer um bom design de código em Java"
 date:   2020-07-20 18:00:00 +0300
 image:  javaba.png
 author: Paula Santana
-tags:   [arquitetura, java, javabahia,soujava,devjavagirls]
+tags:   [arquitetura, java, javabahia,soujava,devjavagirls, comunidade]
 ---
 
 Post de hoje é uma prévia do conteúdo que será apresentado no Oracle Webinar em homenagem aos 25 anos do Java, próxima quarta-feira, 22/07 as 10h por [Paula Santana](https://twitter.com/psanrosa13){:target="\_blank"}, que atua como organizadoras das comunidades: [Sou Java](https://twitter.com/soujava){:target="\_blank"} e [Devs Java Girl](https://twitter.com/devsjavagirl){:target="\_blank"}, com [Rafael Benevides](https://twitter.com/rafabene){:target="\_blank"}. O evento é online e gratuito, você pode garantir sua presença no [link](https://go.oracle.com/LP=96279?elqCampaignId=256156){:target="\_blank"}.
