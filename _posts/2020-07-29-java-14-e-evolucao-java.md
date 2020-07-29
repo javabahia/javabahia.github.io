@@ -176,11 +176,17 @@ Criado em 2004 por Kohsuke Kawaguchi, engenheiro da Sun Microsystems, o Jenkins 
 
 A corrida para mapear o genoma humano começou em 1990 e terminou 13 anos depois, quando pesquisadores médicos conseguiram sequenciar os 3 bilhões de pares de bases de DNA do biotecnólogo Craig Venter, após uma década de trabalho envolvendo 3 mil pessoas a um custo de 3 bilhões de dólares. Quando o sequenciamento foi concluído, os cientistas ficaram ansiosos para mergulhar no código fonte da nossa espécie — mas como? Entre no navegador de genoma baseado em Java, uma ferramenta de visualização desenvolvida por uma equipe, que incluía a professora de bioinformática Ann Loraine, para explorar os datasets básicos e as anotações dos genes de referência. O código aberto do Integrated Genome Browser permite que os pesquisadores aumentem e diminuam o zoom e representem graficamente os dados genômicos, a fim de identificar e anotar características genéticas. Em linha com essa iniciativa mundial, uma ferramenta semelhante foi desenvolvida na Universidade da Califórnia, em Santa Cruz, na forma do Genome Browser, gerenciado por Jim Kent.
 
-### VisibleTesla. 
+### Visible Tesla. 
 
 Esse aplicativo escrito em Java foi criado por Joe Pasqua, um entusiasta dos automóveis Tesla, em 2013 como um programa gratuito para monitorar e controlar seu Tesla Model S. O VisibleTesla, inspirado na comunidade do Tesla Motors Club, oferece recursos semelhantes aos encontrados no aplicativo móvel oficial da montadora de carros elétricos. Os usuários podem configurar cercas geográficas e notificações para eventos, como uma porta destrancada ou o estado da carga da bateria, além de coletar e manipular dados de viagem. O código aberto do projeto está no GitHub.
 
 Quer saber um pouco mais do código-fonte do JDK tem o [repositório no Github](https://github.com/openjdk/jdk).
+
+O que vem no JDK 15? Alguns artigos e o roadmap nos links abaixo:
+
+- https://openjdk.java.net/projects/jdk/15/
+- https://www.infoworld.com/article/3534133/jdk-15-the-new-features-in-java-15.html
+- https://www.techgeeknext.com/java/java15-features
 
 
 ## Referencias
@@ -188,4 +194,5 @@ Quer saber um pouco mais do código-fonte do JDK tem o [repositório no Github](
 - https://blogs.oracle.com/oracle-brasil/o-java-14-chegou?source=:ow:evp:cpo:::RC_LAMK200615P00076:OER400070758&intcmp=:ow:evp:cpo:::RC_LAMK200615P00076:OER400070758&elqTrackId=900c3919f5ad4fa0aa8e09f032f04610&elqaid=96279&elqat=2&source=:ow:lp:cpo::
 - https://blogs.oracle.com/java-platform-group/the-arrival-of-java-14?source=:ow:evp:cpo:::rc_lamk200615p00076:oer400070758,:ow:lp:cpo::
 - https://blogs.oracle.com/oracle-brasil/nosso-mundo-movido-a-java?source=:ow:evp:cpo:::rc_lamk200615p00076:oer400070758,:ow:lp:cpo::
+- https://blog.ippon.tech/comparing-java-lts-releases/
 - 
