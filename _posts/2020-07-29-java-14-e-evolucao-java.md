@@ -11,7 +11,7 @@ tags:   [Java14,Java]
 
 As pessoas seguem batendo na tecla reclamando do Java informando que é uma linguagem verbosa, antiga e volta e meia ouvimos que o "Java morreu". Entretanto, Java, vai além de uma simples linguagem de programação, O Java criou um ecosistema robusto e maduro de desenvolvimento que bem ou mal, diversas plataformas e linguagens caminham para desenvolver o mesmo tipo de estrutura.
 
-Um comitê para definir evolução da linguagem (JCP), sistema de gerenciador de dependências (MAVEN, depois veio gradle e Ivy), padrões de codificação (code style), flexibilidade para criação de frameworks (início do desenvolvimento) até consolidação de especificações que definem padrões de implementações para frameworks que surjam dentro da plataforma. Essas, ao meu ver, são algumas das contribuições das comunidades e do ecosistema Java que observo em outras linguagens. Não quero dizer com isso, que Java inventou isso, mas tudo que aprendi foi no Java e vejo hoje algumas linguagens lançando isso, depois de tantos anos de uso. 
+Um comitê para definir a evolução da linguagem (JCP), sistema de gerenciador de dependências (MAVEN, depois veio gradle e Ivy), padrões de codificação (code style), flexibilidade para criação de frameworks (início do desenvolvimento) e até a consolidação de especificações que definem padrões de implementações para frameworks que surjam dentro da plataforma. Essas, ao meu ver, são algumas das contribuições das comunidades e do ecossistema Java que observo em outras linguagens. Não quero dizer com isso, que Java inventou isso, mas tudo que aprendi foi no Java e vejo hoje algumas linguagens lançando isso, depois de tantos anos de uso. 
 
 Versão | Lançamento | Fim do suporte público
 JDK Beta | 1995 | ?
@@ -53,7 +53,7 @@ A [JEP 2](http://openjdk.java.net/jeps/2){:target="\_blank"}, define o template 
 Extraído de um post da Oracle, referenciado na seção de referências, trago aqui algumas informações sobre o Java 14.
 
 ### Java 14, juntos
-Similar ao Java 11, Java 12 e Java13, celebra as contribuições feitas ao Java 14 por vários indivíduos e organizações da Comunidade do OpenJDK — todos compilaram Java, juntos!
+Similar ao Java 11, Java 12 e Java 13, celebra as contribuições feitas ao Java 14 por vários indivíduos e organizações da Comunidade do OpenJDK — todos compilaram Java, juntos!
 
 ### Índice de correção do JDK 14
 O índice geral de alterações no JDK ao longo do tempo permaneceu essencialmente constante por muitos anos, mas, na cadência de seis meses, o ritmo em que inovações prontas para produção são entregues melhorou imensamente. Em vez de se disponibilizarem dezenas de milhares de correções e cerca de cem JDK Enhancement Proposals (JEPs) disponíveis em um grande lançamento a cada poucos anos, os aperfeiçoamentos são fornecidos em versões menores de recursos em um cronograma de seis meses, mais gerenciável e previsível. Essas alterações podem variar de um recurso significativo a pequenos aprimoramentos e manutenção de rotina, correção de bugs e melhorias na documentação. Cada alteração é representada em um único commit para um único problema no JDK Bug System.
@@ -102,7 +102,7 @@ Este JEP substitui as portas Solaris e SPARC com o objetivo de removê-las em um
 
 #### 10. JEP 363 - Remove the Concurrent Mark Sweep (CMS) Garbage Collector
 
-O coletor de lixo de CMS foi dispensado há dois anos e o G1, que é o sucessor pretendido da CMS desde o JDK 6, tem sido o coletor padrão e usado em larga escala há muitos anos.  Também vimos a introdução de dois novos coletores, ZGC e Shenandoah, com muitos aperfeiçoamentos no G1 no mesmo período.  
+O coletor de lixo de CMS foi dispensado há dois anos e o G1, que é o sucessor pretendido da CMS desde o JDK 6, tem sido o coletor padrão usado em larga escala há muitos anos.  Também vimos a introdução de dois novos coletores, ZGC e Shenandoah, com muitos aperfeiçoamentos no G1 no mesmo período.  
 
 #### 11. JEP 364 - ZGC on macOS
 
@@ -142,7 +142,7 @@ Pode ser baixada nesse [link.](https://jdk.java.net/14/?source=:ow:evp:cpo:::rc_
 
 #### Recurso mais expressivo
 
-[Nesse artigo](https://blogs.oracle.com/oracle-brasil/java-14-torna-codigo-super-expressivo-dizem-desenvolvedores?source=:ow:evp:cpo:::RC_LAMK200615P00076:OER400070758&intcmp=:ow:evp:cpo:::RC_LAMK200615P00076:OER400070758&elqTrackId=e69482bb6fd0429bb1697f3ec9b22fc3&elqaid=96279&elqat=2&source=:ow:lp:cpo::){:target="\_blank"}, é possível obter a opnião de especialistas renomados, inclusive o Dr Venkat Subramaniam, autor premiado e fundador da Agile Developer, que veio ao Brasil e a Salvador no ano passado.
+[Nesse artigo](https://blogs.oracle.com/oracle-brasil/java-14-torna-codigo-super-expressivo-dizem-desenvolvedores?source=:ow:evp:cpo:::RC_LAMK200615P00076:OER400070758&intcmp=:ow:evp:cpo:::RC_LAMK200615P00076:OER400070758&elqTrackId=e69482bb6fd0429bb1697f3ec9b22fc3&elqaid=96279&elqat=2&source=:ow:lp:cpo::){:target="\_blank"}, é possível obter a opinião de especialistas renomados, inclusive o Dr Venkat Subramaniam, autor premiado e fundador da Agile Developer, que veio ao Brasil e a Salvador no ano passado.
 
 Vejam o que ele diz: "__Eu sou uma daquelas pessoas que vivem reclamando que o Java é detalhado demais", diz Venkat Subramaniam, autor premiado e fundador da Agile Developer. Embora as ferramentas de edição de código (IDEs) aliviem esse fardo ao produzir automaticamente algumas instruções no código-fonte, diz ele, elas podem produzir o que os desenvolvedores chamam pejorativamente de "vômitos de código__
 
