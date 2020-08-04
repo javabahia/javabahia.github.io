@@ -47,7 +47,7 @@ As anotações geralmente são bem intuitivas e autoexplicativas, como por exemp
 @Min = De forma similar informa que é esperado um valor inteiro maior ou igual ao número no elemento de valor.
 @Size = Se refere ao tamanho do campo ou propriedade. Este deve corresponder aos limites especificados.
 @Null = O valor do campo ou propriedade não deve ser nulo...entre outras.
-O Hibernate Validator será a implementação da JSR que utilizaremos no exemplo, você pode ver mais detalhes na própria documentação da biblioteca: https://docs.jboss.org/hibernate/validator/7.0/api/
+O Hibernate Validator será a implementação da JSR que utilizaremos no exemplo, você pode ver mais detalhes na própria [documentação da biblioteca](https://docs.jboss.org/hibernate/validator/7.0/api/){:target="\_blank"}
 Existem três anotações que sempre me geravam dúvidas quanto a seus usos e diferenças. E nós vamos focar nelas a partir de agora.
 @NotNull, @NotEmpty ou @NotBlank?
 É muito fácil imaginar que essas três anotações possuem a mesma função mas olhando na documentação do Hibernate Validator podemos entender as  diferenças entre essas anotações.
@@ -158,6 +158,6 @@ Esse artigo mostrou que embora essas anotações aparentem ter a mesma finalidad
 Sendo assim para validar um campo String de preenchimento obrigatório, não vazio, é indicado o uso de @NotBlank.
 
 Montival Junior (Estudante Desenvolvimento Java):
-- Github: https://github.com/MonthAlcantara
-- Linkedin: https://www.linkedin.com/in/montivaljunior
-- Page: https://monthalcantara.github.io/
+- [Github](https://github.com/MonthAlcantara)
+- [Linkedin](https://www.linkedin.com/in/montivaljunior)
+- [Page]([https://monthalcantara.github.io/)
