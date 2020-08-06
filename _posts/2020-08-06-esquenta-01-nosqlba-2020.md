@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Esquenta #NosqlBA 2020 com Rafael Ponte"
+title:  "Esquenta NosqlBA 2020 com Rafael Ponte"
 date:   2020-08-06 07:30:00 +0300
 image:  javaba.png
 author: Antonio Lazaro
