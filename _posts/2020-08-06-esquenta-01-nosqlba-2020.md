@@ -13,6 +13,28 @@ Como evento de esquenta para o NosqlBA 2020 que será em 16/09, traremos um dos 
 
 O evento será transmitido no [youtube no Canal do Java Bahia,assina lá](https://www.youtube.com/channel/UCgxsVLafg65Z7TBWX0t5CqA){:target="\_blank"}.
 
+## Patrocínio
+
+<div>
+    <img src="/img/nosqlba/alura-dark-1060px.png" class="img-thumbnail logo" alt="Alura">
+    <img src="/img/nosqlba/cdc.png" class="img-thumbnail logo" alt="Casa do código">
+</div>
+
+## Apoio 
+<div class="container">
+    <div class="row text-center">
+        <img src="/img/nosqlba/globodotcom.png" class="img-thumbnail logo" 
+        alt="Globo.com">
+        <img src="/img/nosqlba/logo_infoucsal.jpg" class="img-thumbnail logo" 
+        alt="DA Info UCSAL">
+        <img src="/img/nosqlba/logo-ucsal.png" class="img-thumbnail logo" 
+        alt="UCSAL (Universidade Católica do Salvador)">
+    </div>  
+</div>
+
+
+## Link pro evento
+
 [Link para o evento.](https://www.youtube.com/watch?v=9a5-SFX2x6w){:target="\_blank"}
 
 Não precisará de inscrição
