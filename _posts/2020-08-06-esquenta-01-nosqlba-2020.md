@@ -53,7 +53,7 @@ Horário | Título | Palestrante
 17:30 | Abertura evento com organização | coordenação da UCSAL e apresentação do evento.
 18:00 | Highlights and Tips with DynamoDB usage at HostGator Prismo	| [Raulino Neto](https://www.linkedin.com/in/raulinoneto/){:target="\_blank"}
 19:00 | Escalando seu Sistema com Fila em Banco	| [Rafael Ponte](https://www.linkedin.com/in/rponte/){:target="\_blank"}
-20:00 | PostgreNoSQL, o monolito dos bancos de dados | [Christiano Milfont](https://www.linkedin.com/in/cmilfont/){:target="\_blank"}
+20:00 | Product Ops, evoluindo o NOC para o BOC das áreas de negócio | [Christiano Milfont](https://www.linkedin.com/in/cmilfont/){:target="\_blank"}
 21:00 | Construindo um banco NoSQL do zero	| [Guilherme Bernal](https://www.linkedin.com/in/guilherme-bernal-58666777/){:target="\_blank"}
 
 Mais informações no [site do evento](http://www.nosqlba.com/2020/index.html){:target="\_blank"}
