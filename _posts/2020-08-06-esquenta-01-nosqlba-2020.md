@@ -11,9 +11,9 @@ tags:   [nosqlba, nosql, javabahia,comunidade, evento]
 
 Como evento de esquenta para o NosqlBA 2020 que será em 16/09, traremos um dos palestrantes, [Rafael Ponte](https://www.linkedin.com/in/rponte/){:target="\_blank"}, para falarmos um pouco de cases com Nosql e lições sobre os bancos não relacionais.
 
-O evento será transmitido no youtube no Canal do Java Bahia (caso não tenha assinado, assina: https://www.youtube.com/channel/UCgxsVLafg65Z7TBWX0t5CqA).
+O evento será transmitido no [youtube no Canal do Java Bahia,assina lá](https://www.youtube.com/channel/UCgxsVLafg65Z7TBWX0t5CqA){:target="\_blank"}.
 
-Link para o evento: https://www.youtube.com/watch?v=9a5-SFX2x6w
+[Link para o evento.](https://www.youtube.com/watch?v=9a5-SFX2x6w){:target="\_blank"}
 
 Não precisará de inscrição
 
