@@ -51,7 +51,7 @@ A Figura 1 demonstra o funcionamento dos web services utilizando os protocolos R
 
 ![Funcionamento dos web services REST e SOAP](/img/posts/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/funcionamento_web_services_rest_soap.jpeg)
 
-Figura 1: Funcionamento dos web services REST e SOAP. Fonte: <[](http://www.emmielewis.com/to-rest-or-not-to-rest/){:target="\_blank"}>.
+Figura 1: Funcionamento dos web services REST e SOAP. Fonte: <[http://www.emmielewis.com/to-rest-or-not-to-rest](http://www.emmielewis.com/to-rest-or-not-to-rest/){:target="\_blank"}>.
 
 ## **3. SOAP**
 
@@ -65,7 +65,7 @@ Segundo [STREIBEL apud MORO, DORNELES e REBONATTO, 2011], um envelope SOAP é um
 
 ![Estrutura de um documento SOAP](/img/posts/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/estrutura_documento_soap.jpeg)
 
-Figura 2: Estrutura de um documento SOAP. Fonte: <[](http://disciplinas.ist.utl.pt/~leic-sod.daemon/2012-2013/labs/lab11/soap_saaj/soap/index.html){:target="\_blank"}>.
+Figura 2: Estrutura de um documento SOAP. Fonte: <[http://disciplinas.ist.utl.pt/~leic-sod.daemon/2012-2013/labs/lab11/soap_saaj/soap/index.html](http://disciplinas.ist.utl.pt/~leic-sod.daemon/2012-2013/labs/lab11/soap_saaj/soap/index.html){:target="\_blank"}>.
 
 A Figura 2 demonstra a estrutura de um documento SOAP onde o Envelope é um elemento raiz que identifica o documento XML como uma mensagem SOAP. No elemento *Header* são inseridos os dados de cabeçalho tais como endereçamento, segurança, transações, entre outros. Os dados de sistema podem ser colocados no *Header* ou não, pois eles são opcionais. O elemento *Body* é responsável por armazenar os dados de negócio sendo estas informações de chamadas e respostas. No *Body* também é possível adicionar um elemento denominado *Fault* responsável por manter informações e status de possíveis erros. A Figura 3 exemplifica a estrutura de um documento XML de uma mensagem SOAP.
 
@@ -79,7 +79,7 @@ Segundo [WEERAWARANA, et al. apud MORO, DORNELES e REBONATTO, 2011], o WSDL é c
 
 ![Definição das versões 1.1 e 2.0 do WSDL](/img/posts/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/definicao_versoes_wsdl.jpeg)
 
-Figura 4 - Definição das versões 1.1 e 2.0 do WSDL. Fonte: <[](http://www.servicetechmag.com/I27/0309-3){:target="\_blank"}>.
+Figura 4 - Definição das versões 1.1 e 2.0 do WSDL. Fonte: <[http://www.servicetechmag.com/I27/0309-3](http://www.servicetechmag.com/I27/0309-3){:target="\_blank"}>.
 
 Observando a Figura 4 percebe-se que houve algumas mudanças na versão 2.0 da especificação WSDL, o elemento message foi retirado, o elemento definitions passou a ser *description*, o elemento *portType* passou a ser *interface*, e o elemento *port* passou a ser *endpoint*.
 
@@ -101,7 +101,7 @@ Um dos pontos importante e como já mencionado anteriormente é a utilização d
 
 ![Métodos básicos do REST](/img/posts/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/metodos_basicos_rest.jpeg)
 
-Figura 5 - Métodos básicos do REST. Fonte: <[](https://msdn.microsoft.com/pt-br/library/dd941696.aspx){:target="\_blank"}>.
+Figura 5 - Métodos básicos do REST. Fonte: <[https://msdn.microsoft.com/pt-br/library/dd941696.aspx](https://msdn.microsoft.com/pt-br/library/dd941696.aspx){:target="\_blank"}>.
 
 Segundo [MORO, DORNELES e REBONATTO, 2011], no REST uma URL é utilizada como identificador único para o recurso na troca de mensagens, este podendo ter um funcionamento diferenciado conforme o método usado para invocá-lo e os dados passados na requisição HTTP.
 
@@ -109,7 +109,7 @@ Uma outra característica importante do REST é a utilização de *media types* 
 
 ![Exemplo de media types](/img/posts/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/exemplo_media_types.jpeg)
 
-Figura 6 - Exemplo de *media types*. Fonte: <[](http://manuel-palacio.blogspot.com.br/2012/03/rest-versioning-example.html){:target="\_blank"}>.
+Figura 6 - Exemplo de *media types*. Fonte: <[http://manuel-palacio.blogspot.com.br/2012/03/rest-versioning-example.html](http://manuel-palacio.blogspot.com.br/2012/03/rest-versioning-example.html){:target="\_blank"}>.
 
 Conforme pode ser visualizado na Figura 6, caso seja feito uma solicitação para a URL ou URI (*Uniform Resource Name*) passando o cabeçalho *Accept* com o valor application/xml, irá receber uma representação da informação como XML, assim como, se for passado o valor image/* irá receber uma imagem representando a informação e se for passado application/json irá receber a representação da informação como JSON.
 
@@ -163,6 +163,6 @@ SAUDATE, A. **REST: Construa API's inteligentes de maneira simples.** São Paulo
 
 SAUDATE, A. **SOA aplicado: Integrando com web services e além.** São Paulo. Casa do Código Editora, 2012.
 
-W3C. **SOAP Version 1.2 Part 0: Primer (Second Edition).** W3C Recommendation 27 April 2007. Disponível em: <[](http://www.w3.org/TR/2007/REC-soap12-part0-20070427/){:target="\_blank"}>. Acesso em: 03 mai. 2015.
+W3C. **SOAP Version 1.2 Part 0: Primer (Second Edition).** W3C Recommendation 27 April 2007. Disponível em: <[http://www.w3.org/TR/2007/REC-soap12-part0-20070427/](http://www.w3.org/TR/2007/REC-soap12-part0-20070427/){:target="\_blank"}>. Acesso em: 03 mai. 2015.
 
-W3C. **Web Services Architecture: W3C Working Group 2004.** Disponível em: <[](http://www.w3.org/TR/ws-arch/){:target="\_blank"}>. Acesso em: 03 mai. 2015.
+W3C. **Web Services Architecture: W3C Working Group 2004.** Disponível em: <[http://www.w3.org/TR/ws-arch/](http://www.w3.org/TR/ws-arch/){:target="\_blank"}>. Acesso em: 03 mai. 2015.
