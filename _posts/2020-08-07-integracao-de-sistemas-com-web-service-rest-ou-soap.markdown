@@ -4,10 +4,10 @@ title:  "Integração de Sistemas com Web Service: REST ou SOAP?"
 date:   2020-08-07 18:00:00 +0300
 image:  javaba.png
 author: Angelo Brandão
-tags:   [web service, rest, soap, javabahia, soujava, comunidade]
+tags:   [web service, rest, soap, javabahia, comunidade]
 ---
 
-![Integração de Sistemas](/img/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/integracao.jpeg)
+![Integração de Sistemas](/img/posts/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/integracao.jpeg)
 
 Este artigo apresenta um estudo sobre *web service* com a finalidade de demonstrar através de uma análise comparativa entre as tecnologias REST e SOAP as vantagens e desvantagens em utilizá-las como soluções para prover serviços e integrar sistemas. Será abordado uma introdução sobre *web services* e uma contextualização sobre as tecnologias REST e SOAP para explicar como tais tecnologias são utilizadas para a integração entre sistemas. As informações abordadas e levantadas através de uma pesquisa exploratória com abordagem qualitativa e fundamentado no levantamento bibliográfico serão analisadas e comparadas para concluir quais as vantagens e desvantagens de utilizá-las. A partir das análise comparativa realizada, foi possível concluir que as duas tecnologias mesmo possuindo suas peculiaridades, cabe ao desenvolvedor escolher qual delas utilizar para atender a necessidade da integração.
 
@@ -49,7 +49,7 @@ Como alternativa para o XML para a transmissão de dados na comunicação entre 
 
 A Figura 1 demonstra o funcionamento dos web services utilizando os protocolos REST e SOAP, explicados nas próximas sessões.
 
-![Funcionamento dos web services REST e SOAP](/img/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/funcionamento_web_services_rest_soap.jpeg)
+![Funcionamento dos web services REST e SOAP](/img/posts/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/funcionamento_web_services_rest_soap.jpeg)
 
 Figura 1: Funcionamento dos web services REST e SOAP. Fonte: <[](http://www.emmielewis.com/to-rest-or-not-to-rest/){:target="\_blank"}>.
 
@@ -63,13 +63,13 @@ Existem duas maneiras de enviar mensagens para que um cliente possa realizar sol
 
 Segundo [STREIBEL apud MORO, DORNELES e REBONATTO, 2011], um envelope SOAP é um documento XML e seu formato é definido por um XML schema, que faz uso do XML *namespaces* para garantir extensibilidade. Um documento SOAP é constituído estruturalmente por um elemento Envelope, um elemento *Header*, um *Body* e um elemento *Fault*, conforme representado na Figura 2.
 
-![Estrutura de um documento SOAP](/img/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/estrutura_documento_soap.jpeg)
+![Estrutura de um documento SOAP](/img/posts/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/estrutura_documento_soap.jpeg)
 
 Figura 2: Estrutura de um documento SOAP. Fonte: <[](http://disciplinas.ist.utl.pt/~leic-sod.daemon/2012-2013/labs/lab11/soap_saaj/soap/index.html){:target="\_blank"}>.
 
 A Figura 2 demonstra a estrutura de um documento SOAP onde o Envelope é um elemento raiz que identifica o documento XML como uma mensagem SOAP. No elemento *Header* são inseridos os dados de cabeçalho tais como endereçamento, segurança, transações, entre outros. Os dados de sistema podem ser colocados no *Header* ou não, pois eles são opcionais. O elemento *Body* é responsável por armazenar os dados de negócio sendo estas informações de chamadas e respostas. No *Body* também é possível adicionar um elemento denominado *Fault* responsável por manter informações e status de possíveis erros. A Figura 3 exemplifica a estrutura de um documento XML de uma mensagem SOAP.
 
-![Documento XML de uma mensagem SOAP](/img/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/documento_xml_mensagem_soap.jpeg)
+![Documento XML de uma mensagem SOAP](/img/posts/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/documento_xml_mensagem_soap.jpeg)
 
 Figura 3 - Documento XML de uma mensagem SOAP. Fonte: Elaboração própria (2015).
 
@@ -77,7 +77,7 @@ Ao criar um serviço e publica-lo, o mesmo fica disponivel para que seja utiliza
 
 Segundo [WEERAWARANA, et al. apud MORO, DORNELES e REBONATTO, 2011], o WSDL é considerado um vocabulário XML utilizado para descrever e localizar web services. O WSDL possui cinco sessões: *types*, *message* (onde pode existir mais de um elemento), *portType*, *binding* e *service*. [SAUDATE, 2012]. A Figura 4 demonstra a sessões definidas para versões 1.1 e 2.0 do WSDL.
 
-![Definição das versões 1.1 e 2.0 do WSDL](/img/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/definicao_versoes_wsdl.jpeg)
+![Definição das versões 1.1 e 2.0 do WSDL](/img/posts/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/definicao_versoes_wsdl.jpeg)
 
 Figura 4 - Definição das versões 1.1 e 2.0 do WSDL. Fonte: <[](http://www.servicetechmag.com/I27/0309-3){:target="\_blank"}>.
 
@@ -99,7 +99,7 @@ Para que os princípios REST sejam respeitados deve se seguir um conjunto de res
 
 Um dos pontos importante e como já mencionado anteriormente é a utilização dos métodos disponibilizados pelo HTTP. Diferente do SOAP, que só utiliza o método POST para transmitir os dados, o REST prevê que, dentro de um cenário ideal, o método HTTP a ser utilizado seja diretamente relacionado à funcionalidade do serviço a ser consumido. Então, o REST fornece uma interface uniforme com os métodos GET, PUT, DELETE e POST, conforme demonstrado na Figura 5.
 
-![Métodos básicos do REST](/img/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/metodos_basicos_rest.jpeg)
+![Métodos básicos do REST](/img/posts/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/metodos_basicos_rest.jpeg)
 
 Figura 5 - Métodos básicos do REST. Fonte: <[](https://msdn.microsoft.com/pt-br/library/dd941696.aspx){:target="\_blank"}>.
 
@@ -107,7 +107,7 @@ Segundo [MORO, DORNELES e REBONATTO, 2011], no REST uma URL é utilizada como id
 
 Uma outra característica importante do REST é a utilização de *media types* para modificar as representações de um mesmo conteúdo, sob ponto de vista distintos. Por exemplo, ao efetivar uma consulta em um sistema por uma determinada informação, pode se tanto desejar um XML com os dados, quanto um JSON, como também uma imagem. Isso pode ser possível utilizando a mesma URL e o que vai distinguir o resultado da solicitação é o valor passado no cabeçalho *Accept*: do HTML (Figura 5). [SAUDATE, 2013]
 
-![Exemplo de media types](/img/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/exemplo_media_types.jpeg)
+![Exemplo de media types](/img/posts/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/exemplo_media_types.jpeg)
 
 Figura 6 - Exemplo de *media types*. Fonte: <[](http://manuel-palacio.blogspot.com.br/2012/03/rest-versioning-example.html){:target="\_blank"}>.
 
@@ -133,7 +133,7 @@ Entretanto, o protocolo SOAP possui funcionalidades que são úteis em situaçõ
 
 A Tabela 1 demonstra resumidamente as diferenças, vantagens e desvantagem dos protocolos SOAP e REST.
 
-![Exemplo de media types](/img/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/tabela_soap_x_rest.jpeg)
+![Exemplo de media types](/img/posts/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/tabela_soap_x_rest.jpeg)
 
 Tabela 1 - Tabela SOAP x REST. Fonte: Fonte: Elaboração própria (2015).
 
