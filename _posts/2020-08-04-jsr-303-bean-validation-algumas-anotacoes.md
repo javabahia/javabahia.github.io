@@ -157,7 +157,7 @@ Esse artigo mostrou que embora essas anotações aparentem ter a mesma finalidad
 
 Sendo assim para validar um campo String de preenchimento obrigatório, não vazio, é indicado o uso de @NotBlank.
 
-Montival Junior (Estudante Desenvolvimento Java):
+## Montival Junior (Estudante Desenvolvimento Java):
 - [Github](https://github.com/MonthAlcantara)
 - [Linkedin](https://www.linkedin.com/in/montivaljunior)
-- [Page]([https://monthalcantara.github.io/)
+- [Blog Pessoal]([https://monthalcantara.github.io/)

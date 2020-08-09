@@ -1,0 +1,279 @@
+I"�V<h2 id="sistema-de-versionamento-atual-do-java-lts-x-non-lts">Sistema de versionamento atual do Java (LTS x Non-LTS)</h2>
+
+<p>As pessoas seguem batendo na tecla reclamando do Java informando que é uma linguagem verbosa, antiga e volta e meia ouvimos que o “Java morreu”. Entretanto, Java, vai além de uma simples linguagem de programação, O Java criou um ecosistema robusto e maduro de desenvolvimento que bem ou mal, diversas plataformas e linguagens caminham para desenvolver o mesmo tipo de estrutura.</p>
+
+<p>Um comitê para definir a evolução da linguagem (JCP), sistema de gerenciador de dependências (MAVEN, depois veio gradle e Ivy), padrões de codificação (code style), flexibilidade para criação de frameworks (início do desenvolvimento) e até a consolidação de especificações que definem padrões de implementações para frameworks que surjam dentro da plataforma. Essas, ao meu ver, são algumas das contribuições das comunidades e do ecossistema Java que observo em outras linguagens. Não quero dizer com isso, que Java inventou isso, mas tudo que aprendi foi no Java e vejo hoje algumas linguagens lançando isso, depois de tantos anos de uso.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Versão</td>
+      <td>Lançamento</td>
+      <td>Fim do suporte público</td>
+    </tr>
+    <tr>
+      <td>JDK Beta</td>
+      <td>1995</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td>JDK 1.0</td>
+      <td>01/1996</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td>JDK 1.1</td>
+      <td>02/1997</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td>J2SE 1.2</td>
+      <td>12/1998</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td>J2SE 1.3</td>
+      <td>05/2000</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td>J2SE 1.4</td>
+      <td>02/2002</td>
+      <td>10/2008</td>
+    </tr>
+    <tr>
+      <td>J2SE 5.0</td>
+      <td>09/2004</td>
+      <td>11/2009</td>
+    </tr>
+    <tr>
+      <td>Java SE 6.0</td>
+      <td>12/2006</td>
+      <td>04/2013</td>
+    </tr>
+    <tr>
+      <td>Java SE 7.0</td>
+      <td>07/2011</td>
+      <td>04/2015</td>
+    </tr>
+    <tr>
+      <td>Java SE 8.0 (LTS)</td>
+      <td>03/2014</td>
+      <td>01/2019 Versão da JDK da Oracle 05/2026 AdoptOpenk JDK 06/2023 Amazon Correto</td>
+    </tr>
+    <tr>
+      <td>Java SE 9.0</td>
+      <td>09/2017</td>
+      <td>03/2018</td>
+    </tr>
+    <tr>
+      <td>Java SE 10.0</td>
+      <td>03/2018</td>
+      <td>09/2018</td>
+    </tr>
+    <tr>
+      <td>Java SE 11.0 (LTS)</td>
+      <td>09/2018</td>
+      <td>10/2024 AdoptOpenk JDK 08/2024 Amazon Correto</td>
+    </tr>
+    <tr>
+      <td>Java SE 12.0</td>
+      <td>03/2019</td>
+      <td>09/2019</td>
+    </tr>
+    <tr>
+      <td>Java SE 13.0</td>
+      <td>09/2019</td>
+      <td>03/2020</td>
+    </tr>
+    <tr>
+      <td>Java SE 14.0 (ATUAL)</td>
+      <td>03/2020</td>
+      <td>09/2021</td>
+    </tr>
+    <tr>
+      <td>Java SE 15.0</td>
+      <td>09/2020</td>
+      <td>03/2021</td>
+    </tr>
+    <tr>
+      <td>Java SE 16.0</td>
+      <td>03/2021</td>
+      <td>09/2021</td>
+    </tr>
+    <tr>
+      <td>Java SE 17.0 (LTS)</td>
+      <td>09/2021</td>
+      <td>Não definido</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Antes do lançamento das releases semestrais, O Java teve ciclos de lançamentos irregular e muito longo pra uma plataforma de tecnologia, como se pode observar com releases demorando anos para serem atualizadas. A partir da versão 8.0, houve uma mudança estrutura e na forma de fazer a gestão do Java.</p>
+
+<p>O documento “Java is Still Free” que pode ser lido 
+<a download="Java Is Still Free (PT-BR).pdf" href="/img/docs/Java-Is-Still-Free-(PT-BR).pdf" title="Java Is Still Free (PT-BR).pdf">
+    aqui, 
+</a>
+explica o que mudou e que as vezes gera confusão na cabeça das pessoas sobre a gratuidade ou não do Java.</p>
+
+<p>Deve se observar com bastante cautela a questão das releases não LTS (Long-Term-Support) para ambientes produtivos, porque o tempo de suporte a essa release é até o próximo lançamento. <a href="https://www.baeldung.com/java-time-based-releases" target="\_blank">Esse artigo do Baldeung, apresenta de maneira bem didática sobre como funciona esse novo modelo.</a></p>
+
+<p>O java Evolui a partir de JEPs, que são JDK Enhancement Proposal e podem ser entendida na especificação como <a href="http://openjdk.java.net/jeps/1" target="\_blank">JEP 1</a>.</p>
+
+<p>A <a href="http://openjdk.java.net/jeps/2" target="\_blank">JEP 2</a>, define o template de escrita de propostas e a <a href="http://openjdk.java.net/jeps/3" target="\_blank">JEP 3</a>, descreve o processo de release do JDK</p>
+
+<h2 id="explicado-o-modelo-vamos-ao-java-14">Explicado o modelo, vamos ao Java 14</h2>
+
+<p>Extraído de um post da Oracle, referenciado na seção de referências, trago aqui algumas informações sobre o Java 14.</p>
+
+<h3 id="java-14-juntos">Java 14, juntos</h3>
+<p>Similar ao Java 11, Java 12 e Java 13, celebra as contribuições feitas ao Java 14 por vários indivíduos e organizações da Comunidade do OpenJDK — todos compilaram Java, juntos!</p>
+
+<h3 id="índice-de-correção-do-jdk-14">Índice de correção do JDK 14</h3>
+<p>O índice geral de alterações no JDK ao longo do tempo permaneceu essencialmente constante por muitos anos, mas, na cadência de seis meses, o ritmo em que inovações prontas para produção são entregues melhorou imensamente. Em vez de se disponibilizarem dezenas de milhares de correções e cerca de cem JDK Enhancement Proposals (JEPs) disponíveis em um grande lançamento a cada poucos anos, os aperfeiçoamentos são fornecidos em versões menores de recursos em um cronograma de seis meses, mais gerenciável e previsível. Essas alterações podem variar de um recurso significativo a pequenos aprimoramentos e manutenção de rotina, correção de bugs e melhorias na documentação. Cada alteração é representada em um único commit para um único problema no JDK Bug System.</p>
+
+<h3 id="novidades-no-java-14">Novidades no Java 14</h3>
+
+<p>O Java 14 oferece aos usuários dezesseis aperfeiçoamentos/alterações principais, que incluem dois módulos incubadores, três recursos em versão prévia, dois recursos preteridos e duas remoções.</p>
+
+<p>Os 16 JEPs fornecidos com o JDK 14 são:</p>
+
+<h4 id="1-jep-305---pattern-matching-for-instanceof-preview">1. JEP 305 - Pattern Matching for instanceof (Preview)</h4>
+
+<p>Este recurso em versão prévia melhora o Java com correspondência de padrão para o operador instanceof.  Isso melhora a produtividade do desenvolvedor ao eliminar a necessidade de código padrão e permite código fortemente tipado mais conciso.</p>
+
+<h4 id="2-jep-343---packaging-tool-incubator">2. JEP 343 - Packaging Tool (Incubator)</h4>
+
+<p>Esta ferramenta incubadora fornece uma forma para desenvolvedores empacotarem aplicativos Java para distribuição em formatos específicos da plataforma.  A ferramenta ajuda desenvolvedores com aplicativos modernos em que limitações requerem que tempos de execução e aplicativos sejam empacotados em uma única entrega.</p>
+
+<h4 id="3-jep-345---numa-aware-memory-allocation-for-g1">3. JEP 345 - NUMA-Aware Memory Allocation for G1</h4>
+
+<p>Este recurso melhora o desempenho geral do coletor de lixo G1 em sistemas de acesso não uniforme à memória NUMA).</p>
+
+<h4 id="4-jep-349---jfr-event-streaming">4. JEP 349 - JFR Event Streaming</h4>
+
+<p>Este recurso expõe dados do JDK Flight Recorder (JFR) para monitoramento contínuo, o que simplificará o acesso a dados do JFR a várias ferramentas e aplicativos.</p>
+
+<h4 id="5-jep-352---non-volatile-mapped-byte-buffers">5. JEP 352 - Non-Volatile Mapped Byte Buffers</h4>
+
+<p>Este recurso adiciona um modo de mapeamento de arquivos para o JDK quando se usa memória não volátil.  A natureza persistente da memória não volátil altera muitos pressupostos de persistência e desempenho que podem ser aproveitados com este recurso.</p>
+
+<h4 id="6-jep-358---helpful-nullpointerexceptions">6. JEP 358 - Helpful NullPointerExceptions</h4>
+
+<p>Este recurso melhora a usabilidade de NullPointerExceptions ao descrever precisamente qual variável era nula e outras informações úteis.  Isso melhorará a produtividade de desenvolvedor e a qualidade de muitas ferramentas de desenvolvimento e de depuração.</p>
+
+<h4 id="7-jep-359---records-preview">7. JEP 359 - Records (Preview)</h4>
+
+<p>Este recurso em versão prévia fornece uma sintaxe compacta para declarar classes que contêm dados superficialmente imutáveis.  Superficialmente, este ótimo recurso reduz muito códigos padronizados em classes deste tipo, mas, em última análise, o objetivo é permitir uma melhor modelagem de dados como dados.  Declarar agregados de dados nominais superficialmente imutáveis deve ser fácil, claro e conciso.</p>
+
+<h4 id="8-jep-361---switch-expressions">8. JEP 361 - Switch Expressions</h4>
+
+<p>Este era um recurso em versão prévia no JDK 12 e no JDK 13 e agora está concluído.  Ele permite que switch seja usado tanto como uma instrução quanto como uma expressão.  Este recurso simplifica a codificação cotidiana e preparou o caminho para o recurso de correspondência de padrão (JEP 305) incorporado como versão prévia nesta versão.</p>
+
+<h4 id="9-jep-362---deprecate-the-solaris-and-sparc-ports">9. JEP 362 - Deprecate the Solaris and SPARC Ports</h4>
+
+<p>Este JEP substitui as portas Solaris e SPARC com o objetivo de removê-las em uma versão futura.</p>
+
+<h4 id="10-jep-363---remove-the-concurrent-mark-sweep-cms-garbage-collector">10. JEP 363 - Remove the Concurrent Mark Sweep (CMS) Garbage Collector</h4>
+
+<p>O coletor de lixo de CMS foi dispensado há dois anos e o G1, que é o sucessor pretendido da CMS desde o JDK 6, tem sido o coletor padrão usado em larga escala há muitos anos.  Também vimos a introdução de dois novos coletores, ZGC e Shenandoah, com muitos aperfeiçoamentos no G1 no mesmo período.</p>
+
+<h4 id="11-jep-364---zgc-on-macos">11. JEP 364 - ZGC on macOS</h4>
+
+<p>Embora a maioria dos usuários que precisam do ZGC também precisem da escalabilidade de ambientes baseados em Linux, ele também é frequentemente necessário para desenvolvimento e teste em Windows e macOS.  Também há certos aplicativos de área de trabalho que se beneficiarão das capacidades do ZGC.  Portanto, o recurso ZGC foi transferido para o Windows e o macOS.</p>
+
+<h4 id="12-jep-365---zgc-on-windows">12. JEP 365 - ZGC on Windows</h4>
+
+<p>Consulte o resumo do JEP 364.</p>
+
+<h4 id="13-jep-366---deprecate-the-parallelscavenge--serialold-gc-combination">13. JEP 366 - Deprecate the ParallelScavenge + SerialOld GC Combination</h4>
+
+<p>Este dispensa a combinação dos algoritmos Parallel Scavenge e Serial Old, que é raramente usada, com a intenção de removê-la em uma versão futura.</p>
+
+<h4 id="14-jep-367---remove-the-pack200-tools-and-api">14. JEP 367 - Remove the Pack200 Tools and API</h4>
+
+<p>Este remove as ferramentas pack200 e unpack200 e a API Pack200 no pacote java.util.jar. Essas ferramentas e API foram dispensadas para remoção no Java SE 11.</p>
+
+<h4 id="15-jep-368---text-blocks-second-preview">15. JEP 368 - Text Blocks (Second Preview)</h4>
+
+<p>Após receber feedback quando Text Blocks foi introduzido como um recurso em versão prévia (JEP 355) como parte do Java 13, duas novas sequências de escape foram adicionadas e Text Blocks está sendo oferecido como um recurso em versão prévia pela segunda vez. Os benefícios do recurso Text Blocks incluem: escrita simplificada de programas usando cadeias de caracteres que abrangem várias linhas de código-fonte, ao mesmo tempo em que evita sequências de escape em casos comuns; legibilidade aprimorada de cadeias de caracteres em programas Java que denotam código escrito em linguagens não Java; suporta a migração de cadeia de caracteres literais ao estipular que qualquer novo constructo pode expressar o mesmo conjunto de cadeias de caracteres que uma cadeia de caracteres literal, interpretar as mesmas sequências de escape e ser manipuladas das mesmas formas que um cadeia de caracteres literal.</p>
+
+<h4 id="16jep-370---foreign-memory-access-api-incubator">16.JEP 370 - Foreign-Memory Access API (Incubator)</h4>
+
+<p>Este módulo incubador introduz uma API para permitir que programas Java acessem memória externa fora do heap Java de maneira segura e eficiente.</p>
+
+<h3 id="suporte-a-ferramentas">Suporte a ferramentas</h3>
+
+<p>O suporte corrente e atualizado a ferramentas ajuda a aumentar a produtividade do desenvolvedor.  Com o Java 14, continuamos a acolher os esforços de fornecedores líderes de IDE cujas soluções de ferramentas oferecem aos desenvolvedores suporte para as versões atuais do Java.  Os desenvolvedores podem esperar receber o suporte ao Java 14 com os seguintes IDEs:</p>
+
+<ol>
+  <li><a href="https://blog.jetbrains.com/idea/2020/03/java-14-and-intellij-idea/?source=:ow:evp:cpo:::rc_lamk200615p00076:oer400070758,:ow:lp:cpo::" target="\_blank">JetBrains IDEA</a></li>
+  <li><a href="https://netbeans.apache.org/download/nb113/index.html?source=:ow:evp:cpo:::rc_lamk200615p00076:oer400070758,:ow:lp:cpo::" target="\_blank">Apache NetBeans</a></li>
+  <li><a href="https://marketplace.eclipse.org/content/java-14-support-eclipse-2020-03-415/help?source=:ow:evp:cpo:::rc_lamk200615p00076:oer400070758,:ow:lp:cpo::" target="\_blank">Eclipse IDE</a></li>
+</ol>
+
+<h4 id="download-jdk">Download JDK</h4>
+
+<p>Pode ser baixada nesse <a href="https://jdk.java.net/14/?source=:ow:evp:cpo:::rc_lamk200615p00076:oer400070758,:ow:lp:cpo::" target="\_blank">link.</a>. Recomendo fortemente a utilização do SDK Man como ferramenta de gestão de JDK em sua máquina. <a href="https://sdkman.io/" target="\_blank">Link para instalação e configuração</a>.</p>
+
+<h4 id="recurso-mais-expressivo">Recurso mais expressivo</h4>
+
+<p><a href="https://blogs.oracle.com/oracle-brasil/java-14-torna-codigo-super-expressivo-dizem-desenvolvedores?source=:ow:evp:cpo:::RC_LAMK200615P00076:OER400070758&amp;intcmp=:ow:evp:cpo:::RC_LAMK200615P00076:OER400070758&amp;elqTrackId=e69482bb6fd0429bb1697f3ec9b22fc3&amp;elqaid=96279&amp;elqat=2&amp;source=:ow:lp:cpo::" target="\_blank">Nesse artigo</a>, é possível obter a opinião de especialistas renomados, inclusive o Dr Venkat Subramaniam, autor premiado e fundador da Agile Developer, que veio ao Brasil e a Salvador no ano passado.</p>
+
+<p>Vejam o que ele diz: “<strong>Eu sou uma daquelas pessoas que vivem reclamando que o Java é detalhado demais”, diz Venkat Subramaniam, autor premiado e fundador da Agile Developer. Embora as ferramentas de edição de código (IDEs) aliviem esse fardo ao produzir automaticamente algumas instruções no código-fonte, diz ele, elas podem produzir o que os desenvolvedores chamam pejorativamente de “vômitos de código</strong></p>
+
+<p>É por esse motivo que há um esforço contínuo, com o ciclo de lançamento a cada seis meses, para simplificar a linguagem, removendo o excesso de detalhes e reduzindo os recursos obsoletos. “<strong>O Java 14 remove muito ruído no código”, diz Subramaniam, apontando para os recursos Records,  Pattern Matching e Switch Expressions. (Switch Expressions foi lançado pela primeira vez no JDK 12). Esses recursos removem o código clichê e tornam o código altamente expressivo e intuitivo—fácil de escrever e manter.</strong>”</p>
+
+<h2 id="conclusão">Conclusão</h2>
+
+<p>Por fim, para dar dimensão da grandeza do Java e sua utilização, separei alguns projetos Java de grande relevância do artigo especial da Oracle sobre os melhores aplicativos Java já escritos.</p>
+
+<h3 id="maestro-controlador-de-rovers-em-marte">Maestro, controlador de rovers em Marte.</h3>
+
+<p>Em 2004, o Java se tornou a primeira linguagem de programação a expandir o alcance planetário da humanidade. Durante três meses naquele ano, cientistas que trabalhavam no Laboratório de Propulsão a Jato (JPL, Jet Propulsion Laboratory) da NASA em Pasadena, Califórnia, usaram o sistema Maestro Science Activity Planner em Java, construído pela equipe de interface de robôs do JPL, para controlar o rover Spirit em suas explorações pelo planeta vermelho. A experiência com Java havia começado muitos anos antes no JPL, com a criação de um sistema de comando e controle para o rover Sojourner de 1995. O fundador do Java, James Gosling, passou tanto tempo no JPL que se tornou membro do conselho consultivo.</p>
+
+<h3 id="wikipedia-search">Wikipedia Search.</h3>
+
+<p>Faz sentido que uma enciclopédia criada para as pessoas e pelas pessoas seja executada em software de código aberto — e ofereça um mecanismo de pesquisa desenvolvido em Java. O Lucene, escrito por Doug Cutting em 1999 e batizado com o nome do meio de sua esposa, era na verdade o quinto mecanismo de pesquisa desenvolvido por Cutting. Ele criou os outros como engenheiro para a Xerox PARC, Apple e Excite. Em 2014, a Wikipedia substituiu o Lucene pelo Elasticsearch, um mecanismo de pesquisa distribuído, habilitado por REST e também escrito em Java.</p>
+
+<h3 id="hadoop">Hadoop.</h3>
+
+<p>O Lucene não é a única contribuição de Cutting para a nossa lista. Inspirado em um artigo de pesquisa da Google que descreve o algoritmo MapReduce para processamento de dados em grandes clusters de computadores convencionais, em 2003 Cutting escreveu uma estrutura de código aberto para operações do MapReduce em Java e a chamou de Hadoop, em homenagem ao elefante de brinquedo de seu filho. O Hadoop 1.0 foi lançado em 2006, impulsionando a tendência do big data e inspirando muitas empresas a criar “data lakes”, definir estratégias para analisar os “dados de exaustão” e considerar os dados como “o novo petróleo”. Em 2008, o Yahoo (onde Cutting trabalhava na época) alegou que seu Search Webmap, executado em um cluster Linux com 10 mil núcleos, era o maior aplicativo Hadoop de produção do mundo. Em 2012, o Facebook afirmou ter mais de 100 petabytes de dados no maior cluster Hadoop do mundo.</p>
+
+<h3 id="minecraft">Minecraft.</h3>
+
+<p>O ambiente pacífico desse jogo — com biomas, pessoas e casas que você mesmo constrói usando blocos de construção — mantém crianças e adultos do mundo todo em um estado prolongado de fascinação, o que faz dele o videogame mais popular da história. Desenvolvido em Java por Markus “Notch” Persson e lançado em versão alfa em 2009, o Minecraft e seu universo 3D são uma fonte inesgotável de criatividade, porque não há dois mundos criados que sejam iguais. O uso de Java pelo videogame também permite que programadores, em casa e na escola, criem seus próprios mods.</p>
+
+<h3 id="jenkins">Jenkins.</h3>
+
+<p>Criado em 2004 por Kohsuke Kawaguchi, engenheiro da Sun Microsystems, o Jenkins é um poderoso servidor de integração contínua de código aberto. Escrito em Java, o Jenkins ajuda a criar, testar e implantar aplicativos de maneira rápida e automática. Ele costuma ser reconhecido como uma das primeiras ferramentas de DevOps que possibilitaram a “infraestrutura como código”. O Jenkins e seus mais de 1.500 plugins criados pela comunidade dão conta de inúmeras tarefas de implantação e teste, incluindo trabalhar com o GitHub, dar suporte a desenvolvedores daltônicos e fornecer um arquivo JAR do MySQL Connector.</p>
+
+<h3 id="integrated-genome-browser">Integrated Genome Browser.</h3>
+
+<p>A corrida para mapear o genoma humano começou em 1990 e terminou 13 anos depois, quando pesquisadores médicos conseguiram sequenciar os 3 bilhões de pares de bases de DNA do biotecnólogo Craig Venter, após uma década de trabalho envolvendo 3 mil pessoas a um custo de 3 bilhões de dólares. Quando o sequenciamento foi concluído, os cientistas ficaram ansiosos para mergulhar no código fonte da nossa espécie — mas como? Entre no navegador de genoma baseado em Java, uma ferramenta de visualização desenvolvida por uma equipe, que incluía a professora de bioinformática Ann Loraine, para explorar os datasets básicos e as anotações dos genes de referência. O código aberto do Integrated Genome Browser permite que os pesquisadores aumentem e diminuam o zoom e representem graficamente os dados genômicos, a fim de identificar e anotar características genéticas. Em linha com essa iniciativa mundial, uma ferramenta semelhante foi desenvolvida na Universidade da Califórnia, em Santa Cruz, na forma do Genome Browser, gerenciado por Jim Kent.</p>
+
+<h3 id="visible-tesla">Visible Tesla.</h3>
+
+<p>Esse aplicativo escrito em Java foi criado por Joe Pasqua, um entusiasta dos automóveis Tesla, em 2013 como um programa gratuito para monitorar e controlar seu Tesla Model S. O VisibleTesla, inspirado na comunidade do Tesla Motors Club, oferece recursos semelhantes aos encontrados no aplicativo móvel oficial da montadora de carros elétricos. Os usuários podem configurar cercas geográficas e notificações para eventos, como uma porta destrancada ou o estado da carga da bateria, além de coletar e manipular dados de viagem. O código aberto do projeto está no GitHub.</p>
+
+<p>Quer saber um pouco mais do código-fonte do JDK tem o <a href="https://github.com/openjdk/jdk">repositório no Github</a>.</p>
+
+<p>O que vem no JDK 15? Alguns artigos e o roadmap nos links abaixo:</p>
+
+<ul>
+  <li>https://openjdk.java.net/projects/jdk/15/</li>
+  <li>https://www.infoworld.com/article/3534133/jdk-15-the-new-features-in-java-15.html</li>
+  <li>https://www.techgeeknext.com/java/java15-features</li>
+</ul>
+
+<h2 id="referencias">Referencias</h2>
+
+<ul>
+  <li>https://blogs.oracle.com/oracle-brasil/o-java-14-chegou?source=:ow:evp:cpo:::RC_LAMK200615P00076:OER400070758&amp;intcmp=:ow:evp:cpo:::RC_LAMK200615P00076:OER400070758&amp;elqTrackId=900c3919f5ad4fa0aa8e09f032f04610&amp;elqaid=96279&amp;elqat=2&amp;source=:ow:lp:cpo::</li>
+  <li>https://blogs.oracle.com/java-platform-group/the-arrival-of-java-14?source=:ow:evp:cpo:::rc_lamk200615p00076:oer400070758,:ow:lp:cpo::</li>
+  <li>https://blogs.oracle.com/oracle-brasil/nosso-mundo-movido-a-java?source=:ow:evp:cpo:::rc_lamk200615p00076:oer400070758,:ow:lp:cpo::</li>
+  <li>https://blog.ippon.tech/comparing-java-lts-releases/</li>
+  <li></li>
+</ul>
+:ET

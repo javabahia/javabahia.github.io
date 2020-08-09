@@ -1,0 +1,145 @@
+I"�*<h2 id="idéia-e-motivação-do-artigo">Idéia e motivação do artigo</h2>
+
+<p>Demonstrar a diferença entre anotações que geralmente causam dúvidas em iniciantes 
+e estudantes de desenvolvimento Java que querem utilizar o Hibernate Validator, implementação de referência da <a href="https://beanvalidation.org/1.0/spec/" target="\_blank">JSR 303 – Bean Validation API</a>.</p>
+
+<h2 id="objetivo">Objetivo</h2>
+
+<p>Mostrar aos desenvolvedores que utilizam a API Hibernate Validator, as diferenças entre anotações importantes da API, facilitando a melhor utilização destas em seus projetos.
+Pra quem esse artigo pode ser útil
+Desenvolvedores que desejam aprender o conceito das validações NotNull, NotEmpty e NotBlank e como integrá-las em suas aplicações.</p>
+
+<h3 id="sobre-o-bean-validation">Sobre o Bean Validation</h3>
+
+<p>Bean Validation é uma especificação que permite validar objetos com facilidade em diferentes camadas da aplicação. 
+As restrições de Bean Validation são em forma de anotações, que estão disponíveis no pacote javax.validation.constraints.
+Veja um exemplo de implementação:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Carro</span> <span class="o">{</span>
+
+   <span class="nd">@NotNull</span>
+   <span class="kd">private</span> <span class="nc">String</span> <span class="n">fabricante</span><span class="o">;</span>
+
+   <span class="nd">@NotEmpty</span>
+   <span class="nd">@Size</span><span class="o">(</span><span class="n">min</span> <span class="o">=</span> <span class="mi">2</span><span class="o">,</span> <span class="n">max</span> <span class="o">=</span> <span class="mi">14</span><span class="o">)</span>
+   <span class="kd">private</span> <span class="nc">String</span> <span class="n">placa</span><span class="o">;</span>
+
+   <span class="nd">@Min</span><span class="o">(</span><span class="mi">2</span><span class="o">)</span>
+   <span class="kd">private</span> <span class="kt">int</span> <span class="n">numeroDeAssentos</span><span class="o">;</span>
+
+   <span class="c1">// ...</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>As anotações geralmente são bem intuitivas e autoexplicativas, como por exemplo:</p>
+
+<p>@Max = Informa que o valor do campo ou propriedade deve ser um valor inteiro menor ou igual ao número no elemento de valor.
+@Min = De forma similar informa que é esperado um valor inteiro maior ou igual ao número no elemento de valor.
+@Size = Se refere ao tamanho do campo ou propriedade. Este deve corresponder aos limites especificados.
+@Null = O valor do campo ou propriedade não deve ser nulo…entre outras.
+O Hibernate Validator será a implementação da JSR que utilizaremos no exemplo, você pode ver mais detalhes na própria <a href="https://docs.jboss.org/hibernate/validator/7.0/api/" target="\_blank">documentação da biblioteca</a>
+Existem três anotações que sempre me geravam dúvidas quanto a seus usos e diferenças. E nós vamos focar nelas a partir de agora.
+@NotNull, @NotEmpty ou @NotBlank?
+É muito fácil imaginar que essas três anotações possuem a mesma função mas olhando na documentação do Hibernate Validator podemos entender as  diferenças entre essas anotações.
+Primeiro temos que ter em mente que o  Java distingue entre String nulas e vazias. Uma String vazia é uma instância de String de comprimento zero, enquanto uma String nula, é um objeto sem uma referência de memória.</p>
+
+<p>String teste = null;
+@NotNull: false
+@NotEmpty: false
+@NotBlank: false</p>
+
+<p>Com isso em mente vamos falar da annotation @NotNull.</p>
+
+<h3 id="notnull">@NotNull</h3>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">UsuarioNotNull</span> <span class="o">{</span>
+
+   <span class="nd">@NotNull</span><span class="o">(</span><span class="n">message</span> <span class="o">=</span> <span class="err">“</span><span class="no">O</span> <span class="n">campo</span> <span class="n">nome</span> <span class="n">não</span> <span class="n">pode</span> <span class="n">ser</span> <span class="n">nulo</span><span class="err">”</span><span class="o">)</span>
+   <span class="kd">private</span> <span class="nc">String</span> <span class="n">nome</span><span class="o">;</span>
+
+   <span class="c1">// ...</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>Como bem explícito no nome, essa annotation não permite que o valor seja nulo… porém permite campos vazios. Parece incoerente mas lembra do que falei acima? 
+Se olharmos a classe NotNullValidator vamos notar a implementação do método isValid() que tem a regra da validação:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java">   <span class="kd">public</span> <span class="nc">Boolean</span> <span class="nf">isValid</span><span class="o">(</span><span class="nc">Object</span> <span class="n">object</span><span class="o">){</span>
+	<span class="k">return</span> <span class="n">object</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">;</span>
+   <span class="o">}</span>
+   </code></pre></figure>
+
+<p>Como mostrado acima, o método verifica apenas se o objeto é diferente de null, e vazio é diferente de null, pois existe uma referência de memória. Nesse caso, vazio seria um valor considerado válido.</p>
+
+<p>String teste = “”;
+@NotNull: true
+@NotEmpty: false
+@NotBlank: false</p>
+
+<p>Vamos avançar e falar um pouco sobre a annotation @NotEmpty.</p>
+
+<h3 id="notempty">@NotEmpty</h3>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">UsuarioNotEmpty</span> <span class="o">{</span>
+
+   <span class="nd">@NotEmpty</span><span class="o">(</span><span class="n">message</span> <span class="o">=</span> <span class="err">“</span><span class="no">O</span> <span class="n">campo</span> <span class="n">nome</span> <span class="n">não</span> <span class="n">pode</span> <span class="n">ser</span> <span class="n">vazio</span><span class="err">”</span><span class="o">)</span>
+   <span class="kd">private</span> <span class="nc">String</span> <span class="n">nome</span><span class="o">;</span>
+
+   <span class="c1">// ...</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>Um ponto importante aqui é que a anotação @NotEmpty faz uso da implementação da classe @NotNull  isValid(). Porém existe um adendo. 
+Essa annotation também verifica se o tamanho do objeto fornecido é maior que zero. Dessa forma, se passarmos um “espaço” (“ “) como valor ao parametro, a annotation irá considerar como um valor válido. Afinal um “espaço” não é nulo e possui tamanho maior que zero. Neste caso:</p>
+
+<p>String teste = “”;
+@NotNull: true
+@NotEmpty: true
+@NotBlank: false</p>
+
+<p>** Se quisermos ser ainda mais restritivos, podemos usar a anotação @NotEmpty em conjunto com @Size.
+@NotEmpty(message = “O campo nome não pode ser vazio”)
+@Size(min = 2, max = 32, message = “O campo nome deve ter entre 2 e 32 caracteres”)
+private String nome;</p>
+
+<h3 id="notblank">@NotBlank</h3>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">UsuarioNotBlank</span> <span class="o">{</span>
+
+   <span class="nd">@NotBlank</span><span class="o">(</span><span class="n">message</span> <span class="o">=</span> <span class="err">“</span><span class="no">O</span> <span class="n">campo</span> <span class="n">nome</span> <span class="n">não</span> <span class="n">pode</span> <span class="n">estar</span> <span class="n">em</span> <span class="n">branco</span><span class="err">”</span><span class="o">)</span>
+   <span class="kd">private</span> <span class="nc">String</span> <span class="n">nome</span><span class="o">;</span>
+
+   <span class="c1">// ...</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>A annotation @NotBlank faz a mesma verificação que NotNull e NotEmpty (se o objeto é diferente de null) , porém diferente da verificação feita por NotEmpty, aqui é utilizado o método trim() na verificação da String, apagando assim os espaços em branco na verificação do tamanho do valor. Podemos ver isso pelo método isValid() da classe NotBlankValidator.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="nc">Boolean</span> <span class="nf">isValid</span><span class="o">(</span><span class="nc">CharSequence</span> <span class="n">charSequence</span><span class="o">,</span>
+<span class="nc">ConstrainValidatorContext</span> <span class="n">constrainValidatorContext</span><span class="o">){</span>
+	<span class="nc">If</span><span class="o">(</span><span class="n">charSequence</span> <span class="o">==</span> <span class="kc">null</span><span class="o">){</span>
+		<span class="k">return</span> <span class="n">object</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">;</span>
+  	 <span class="o">}</span>
+	<span class="k">return</span> <span class="n">charSequence</span><span class="o">.</span><span class="na">toString</span><span class="o">().</span><span class="na">trim</span><span class="o">().</span><span class="na">length</span><span class="o">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">;</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>Sendo assim espaços em branco não são levados em conta.
+String nome = “Java Bahia”;
+@NotNull: true
+@NotEmpty: true
+@NotBlank: true</p>
+
+<h2 id="conclusão">Conclusão</h2>
+
+<p>Esse artigo mostrou que embora essas anotações aparentem ter a mesma finalidade, elas possuem propostas diferentes de verificação. Vamos resumir?</p>
+<ul>
+  <li>@NotNull: Não permite um valor nulo, porém permite um valor vazio.</li>
+  <li>@NotEmpty: Assim como  a @NotNull, não permite valor nulo e além disso seu tamanho deve ser maior que zero. Espaços em brancos são levados em conta na verificação de tamanho do valor.</li>
+  <li>@NotBlank: Assim como a @NotEmpty, não permite valor nulo e o comprimento (sem considerar espaços em branco) deve ser maior que zero.</li>
+</ul>
+
+<p>Sendo assim para validar um campo String de preenchimento obrigatório, não vazio, é indicado o uso de @NotBlank.</p>
+
+<h2 id="montival-junior-estudante-desenvolvimento-java">Montival Junior (Estudante Desenvolvimento Java):</h2>
+<ul>
+  <li><a href="https://github.com/MonthAlcantara">Github</a></li>
+  <li><a href="https://www.linkedin.com/in/montivaljunior">Linkedin</a></li>
+  <li><a href="[https://monthalcantara.github.io/">Blog Pessoal</a></li>
+</ul>
+:ET

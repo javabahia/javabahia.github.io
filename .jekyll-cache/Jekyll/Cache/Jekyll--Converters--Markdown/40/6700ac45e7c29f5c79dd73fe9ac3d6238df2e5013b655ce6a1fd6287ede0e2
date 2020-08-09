@@ -1,0 +1,103 @@
+I"�<h2 id="como-posso-colaborar-com-o-site">Como posso colaborar com o site?</h2>
+
+<p>Algumas pessoas nos procuraram para questionar como podem contribuir com o blog do Java Bahia. Resolvemos fazer esse post explicativo. Basicamente existem duas formas:</p>
+
+<ol>
+  <li>Submetendo um PR diretamente no post do github.</li>
+  <li>Clonando o repositório, rodando localmente e submetendo um PR para o repositório.</li>
+</ol>
+
+<h3 id="1-quero-escrever-um-post">1. Quero escrever um post</h3>
+
+<h4 id="1-acesse-o-diretório-de-posts">1. Acesse o diretório de posts</h4>
+
+<p>https://github.com/javabahia/javabahia.github.io/tree/master/_posts</p>
+
+<h4 id="2-no-canto-superior-direito-clique-no-botão-add-file---create-new-file-ou-faça-upload">2. No canto superior direito, clique no botão Add File -&gt; Create New File (ou faça upload)</h4>
+
+<ol>
+  <li>Padrão do nome do arquivo: aaaa-mm-dd-titulo-separado-hifen.md Exemplo: 2020-07-22-como-contribuir-com-blog-com-pr.md</li>
+  <li>Estrutura do arquivo:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span class="nf">---</span><span class="w">
+</span><span class="nf">layout:</span><span class="w"> </span><span class="nx">post</span><span class="w">
+</span><span class="nf">title:</span><span class="w">  </span><span class="s2">"__Título desejado__"</span><span class="w">
+</span><span class="nf">date:</span><span class="w">   </span><span class="nx">__Data</span><span class="w"> </span><span class="nx">da</span><span class="w"> </span><span class="nx">publica</span><span class="err">çã</span><span class="nx">o__</span><span class="w">
+</span><span class="nf">image:</span><span class="w">  </span><span class="nx">javaba.png</span><span class="w">
+</span><span class="nf">author:</span><span class="w"> </span><span class="nx">__SEU</span><span class="w"> </span><span class="nx">NOME__</span><span class="w">
+</span><span class="nf">tags:</span><span class="w">   </span><span class="p">[</span><span class="kt">tag1</span><span class="p">,</span><span class="w"> </span><span class="kt">assunto</span><span class="p">,</span><span class="w"> </span><span class="kt">tema</span><span class="p">]</span><span class="w">
+</span><span class="nf">---</span><span class="w">
+
+</span><span class="nf">content</span><span class="w"> </span><span class="nx">em</span><span class="w"> </span><span class="nx">markdown</span><span class="w"> </span></code></pre></figure>
+
+<h5 id="como-usar-markdown">Como usar markdown:</h5>
+
+<ol>
+  <li>https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</li>
+  <li>https://www.markdownguide.org/</li>
+</ol>
+
+<h4 id="3-ao-concluir-submeter-clicando-no-botão-propose-new-file">3. Ao concluir, submeter clicando no botão “Propose new file”</h4>
+
+<p>Na mensagem do commit descreva quem é você e porque quer divulgar esse post no blog</p>
+
+<h4 id="4-isso-vai-te-levar-para-tela-para-você-criar-o-pull-request">4. Isso vai te levar para tela para você criar o Pull Request</h4>
+
+<p>Descreva o objetivo do Pull Request.</p>
+
+<h4 id="5-aguarde-revisão-e-aprovação-ou-comentários-do-pull-request-pelo-time-que-administra-o-repositório-do-java-bahia">5. Aguarde revisão e aprovação ou comentários do Pull Request pelo time que administra o repositório do Java Bahia</h4>
+
+<p>Agora é só aguardar.</p>
+
+<h3 id="2-clonando-o-repositório-rodando-localmente-o-site-e-fazendo-um-pr">2. Clonando o repositório, rodando localmente o site e fazendo um PR</h3>
+
+<h4 id="como-clonar-o-repositório">Como clonar o repositório?</h4>
+
+<p>https://docs.github.com/pt/github/creating-cloning-and-archiving-repositories/cloning-a-repository</p>
+
+<h4 id="como-o-site-funciona-onde-está-hospedado">Como o site funciona? Onde está hospedado?</h4>
+
+<p>Site funciona com o GithubPages que utiliza Jekyll com Markdown para linguagem de escrita.</p>
+<ol>
+  <li>https://pages.github.com/</li>
+  <li>jekyhttps://docs.github.com/en/github/working-with-github-pages/about-github-pages</li>
+  <li>https://docs.github.com/en/github/working-with-github-pages</li>
+</ol>
+
+<h4 id="como-instalo-jekyll">Como instalo Jekyll?</h4>
+
+<h5 id="instalar-gems-gerenciador-de-dependencias-do-ruby">Instalar gems (gerenciador de dependencias do ruby)</h5>
+<p>https://guides.rubygems.org/rubygems-basics/#installing-gems</p>
+
+<h5 id="instalando-e-rodando-jekyll">Instalando e rodando Jekyll</h5>
+
+<figure class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span class="err">$</span><span class="w"> </span><span class="nf">gem</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">bundler</span><span class="w"> </span><span class="nx">jekyll</span><span class="w">
+
+</span><span class="err">$</span><span class="w"> </span><span class="nf">jekyll</span><span class="w"> </span><span class="nx">new</span><span class="w"> </span><span class="nx">my-awesome-site</span><span class="w">
+
+</span><span class="err">$</span><span class="w"> </span><span class="nf">cd</span><span class="w"> </span><span class="nx">my-awesome-site</span><span class="w">
+
+</span><span class="err">$</span><span class="w"> </span><span class="nf">bundle</span><span class="w"> </span><span class="nx">exec</span><span class="w"> </span><span class="nx">jekyll</span><span class="w"> </span><span class="nx">serve</span><span class="w">
+
+</span><span class="c"># =&gt; Now browse to http://localhost:4000 </span></code></pre></figure>
+
+<p>Mais sobre instalação: https://jekyllrb.com/docs/installation/
+Mais sobre jekyll: https://jekyllrb.com/</p>
+
+<h6 id="como-configurar-um-domain-dev-no-githubs-pages">Como configurar um Domain .dev no githubs pages</h6>
+
+<p>Tem interesse em criar seu próprio blog e configurar com domínio “.dev”? Veja esse post: 
+https://malaquias.dev/posts/como-configurar-um-dominio-do-google-domains-no-github-pages</p>
+
+<h5 id="templates-jekyll">Templates Jekyll</h5>
+
+<p>https://jekyllthemes.io/free
+http://jekyllthemes.org/</p>
+
+<h2 id="conclusão">Conclusão</h2>
+
+<p>Tem alguma dúvida de como contribuir com a comunidade Java Bahia? Tem algo que possamos ajudar você a entender o fluxo? Comente e vamos tentar se ajudar para fazer nossa comunidade colaborativamente crescer. Pode abrir também uma Issue no github para entendermos as expectativas de vocês.</p>
+
+<p>No <a href="http://localhost:4000/primeiro-post-novo-blog-java-bahia/" target="\_blank">primeiro post</a> falamos sobre isso um pouco e como geraram dúvidas, resolvemos fazer um post mais explicativo.</p>
+:ET

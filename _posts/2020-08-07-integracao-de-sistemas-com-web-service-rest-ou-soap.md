@@ -4,7 +4,7 @@ title:  "Integração de Sistemas com Web Service: REST ou SOAP?"
 date:   2020-08-07 18:00:00 +0300
 image:  javaba.png
 author: Angelo Brandão
-tags:   [web service, rest, soap, javabahia, comunidade]
+tags:   [web service, rest, soap,java, javabahia, comunidade]
 ---
 
 ![Integração de Sistemas](/img/posts/2020-08-07-integracao-de-sistemas-com-web-service-rest-ou-soap/integracao.jpeg)
