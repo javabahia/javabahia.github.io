@@ -13,7 +13,7 @@ Ontem tivemos um marco muito importante para nossa comunidade, inauguramos o can
 
 Ontem, um dos nossos apoiadores, a UCSAL também abriu seu semestre com um evento de boas vindas, durante a live. Professor Osvaldo falou um pouco sobre os projetos da Universidade, bem como o curso.
 
-Um resumo do que foi discutido na live:
+Um resumo do que foi discutido na live (esse trabaalho incrível foi feito por [Montival Junior](https://www.linkedin.com/in/montivaljunior){:target="\_blank"} e também está disponível no link da live.
 
 - [0:22 - Apresentação e boas vindas](https://www.youtube.com/watch?v=G0nViPCrE_o&t=22s)
 - [3:00 - Apresentação do Rafael Ponte](https://www.youtube.com/watch?v=G0nViPCrE_o&t=180s)
