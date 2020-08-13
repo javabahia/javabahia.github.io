@@ -3,7 +3,7 @@ layout: post
 title:  "Review Esquenta 01 NosqlBA 2020 com Rafael Ponte"
 date:   2020-08-13 07:30:00 +0300
 image:  javaba.png
-author: Antonio Lazaro
+author: Antonio Lazaro e Montival Junior
 tags:   [nosqlba, nosql, javabahia,comunidade, evento]
 ---
 
@@ -15,26 +15,26 @@ Ontem, um dos nossos apoiadores, a UCSAL também abriu seu semestre com um event
 
 Um resumo do que foi discutido na live:
 
-[0:22 - Apresentação e boas vindas](https://www.youtube.com/watch?v=G0nViPCrE_o&t=22s)
-[3:00 - Apresentação do Rafael Ponte](https://www.youtube.com/watch?v=G0nViPCrE_o&t=180s)
-[5:52 - Rafael utiliza o Nosql?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=352s)
-[8:30 - Já pensou em utilizar o NoSql?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=510s)
-[13:10 - Utilizar ou não frameworks ORM?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=790s)
-[16:49 - Quando vale a pena usar NoSql?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=1009s) 
-[18:20 - E quando o NoSql é melhor em apenas pontos específicos, usar o relacional?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=1100s)
-[23:13 - Em consultas muito complexas e custosas, vale a pena partir para o SQL nativo?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=1339s)
-[25:35 - Soluções mercadológicas x Desenvolvedores](https://www.youtube.com/watch?v=G0nViPCrE_o&t=1535s)
-[30:26 - Consultas "custosas" com JPA](https://www.youtube.com/watch?v=G0nViPCrE_o&t=1826s)
-[36:30 - Será que o 5G, onde vc baixa Gigas em milissegundos vai acabar com o SPA?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=2190s)
-[38:18 - As empresas tendem a migrar para o banco NoSql ou preferem investir no processamento e estruturação desses dados?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=2298s)
-[41:41 - Kafka (parte 1)](https://www.youtube.com/watch?v=G0nViPCrE_o&t=2501s)
-[44:56 - Iniciantes deveriam focar nos fundamentos antes de explorar outras opções como o NoSql?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=2696s)
-[47:17 - NoSql vai morrer nos próximos anos?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=2837s)
-[49:51 - Back End for Front End Pattern (BFF)](https://www.youtube.com/watch?v=G0nViPCrE_o&t=2991s)
-[51:22 - Qual a escala necessária para justificar usar o NoSql?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=3082s)
-[53:00 - Kafka (parte 2)](https://www.youtube.com/watch?v=G0nViPCrE_o&t=3180s)
-[54:45 - BFF e GraphQL](https://www.youtube.com/watch?v=G0nViPCrE_o&t=3285s)
-[56:23 - Considerações Finais](https://www.youtube.com/watch?v=G0nViPCrE_o&t=3383s)
+- [0:22 - Apresentação e boas vindas](https://www.youtube.com/watch?v=G0nViPCrE_o&t=22s)
+- [3:00 - Apresentação do Rafael Ponte](https://www.youtube.com/watch?v=G0nViPCrE_o&t=180s)
+- [5:52 - Rafael utiliza o Nosql?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=352s)
+- [8:30 - Já pensou em utilizar o NoSql?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=510s)
+- [13:10 - Utilizar ou não frameworks ORM?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=790s)
+- [16:49 - Quando vale a pena usar NoSql?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=1009s) 
+- [18:20 - E quando o NoSql é melhor em apenas pontos específicos, usar o relacional?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=1100s)
+- [23:13 - Em consultas muito complexas e custosas, vale a pena partir para o SQL nativo?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=1339s)
+- [25:35 - Soluções mercadológicas x Desenvolvedores](https://www.youtube.com/watch?v=G0nViPCrE_o&t=1535s)
+- [30:26 - Consultas "custosas" com JPA](https://www.youtube.com/watch?v=G0nViPCrE_o&t=1826s)
+- [36:30 - Será que o 5G, onde vc baixa Gigas em milissegundos vai acabar com o SPA?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=2190s)
+- [38:18 - As empresas tendem a migrar para o banco NoSql ou preferem investir no processamento e estruturação desses dados?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=2298s)
+- [41:41 - Kafka (parte 1)](https://www.youtube.com/watch?v=G0nViPCrE_o&t=2501s)
+- [44:56 - Iniciantes deveriam focar nos fundamentos antes de explorar outras opções como o NoSql?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=2696s)
+- [47:17 - NoSql vai morrer nos próximos anos?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=2837s)
+- [49:51 - Back End for Front End Pattern (BFF)](https://www.youtube.com/watch?v=G0nViPCrE_o&t=2991s)
+- [51:22 - Qual a escala necessária para justificar usar o NoSql?](https://www.youtube.com/watch?v=G0nViPCrE_o&t=3082s)
+- [53:00 - Kafka (parte 2)](https://www.youtube.com/watch?v=G0nViPCrE_o&t=3180s)
+- [54:45 - BFF e GraphQL](https://www.youtube.com/watch?v=G0nViPCrE_o&t=3285s)
+- [56:23 - Considerações Finais](https://www.youtube.com/watch?v=G0nViPCrE_o&t=3383s)
 
 
 [Link para a transmissão, para quem perdeu.](https://www.youtube.com/watch?v=G0nViPCrE_o){:target="\_blank"}.
