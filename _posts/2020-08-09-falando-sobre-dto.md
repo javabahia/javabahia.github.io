@@ -11,7 +11,7 @@ tags:   [java,design patters,dto spring, javabahia, comunidade]
 
 ## Ideia do Post
 
-A ideia deste post é apresentar o conceito do Padrão DTO e as conversões que precisam acontecer entre as entidades internas da aplicação e os DTOs externos (objetos de transferência de dados) publicados de volta para o cliente.
+A ideia deste post é apresentar o conceito do Padrão DTO e as conversões entre entidades internas da aplicação e os DTOs externos publicados de volta para o cliente.
 
 ## Padrão de arquitetura
 
@@ -29,10 +29,10 @@ Padrão __Objeto de Transferência de Dados__ (do inglês, __Data transfer obj
 Diferente do que ocorre com os objetos de negócio e os objetos de acesso a dados (DAO), o DTO não possui qualquer tipo de comportamento. A sua função é obter e armazenar dados.
 Quando estamos trabalhando com uma interface remota, cada chamada ao servidor pode custar muito tempo de processamento, a depender da quantidade de dados. Com o DTO, podemos filtrar quais dados serão transmitidos e assim reduzir esse problema.
 
-O DTO é bastante usado também quando não queremos expor todos os dados da nossa camada de persistência mas precisamos exibir ao nosso cliente estes mesmos dados.
+O DTO é bastante utilizado também quando não queremos expor todos os dados da nossa camada de persistência mas precisamos exibir ao nosso cliente estes mesmos dados.
 Vamos focar nosso post nessa linha de raciocício. 
 
-## Entendo o contexto da aplicação
+## Entendendo o contexto da aplicação
 
 Utilizaremos como exemplo uma API REST criada com Spring Boot e que possui uma área de cadastro de usuários no sistema. 
 
@@ -60,7 +60,7 @@ Aliás, se tivéssemos uma classe apenas com os atributos essenciais para a cria
 A ideia do DTO é essa.
 
 Vamos criar uma classe que, seguindo a convenção, se chamará UsuarioDTO e vamos dizer que esperamos um objeto desse tipo como parâmetro do método salvar() do nosso UsuarioController. 
-Nesta classe vamos usar apenas os atributos que de fato devem ser passados pelo Cliente.
+Nesta classe vamos usar apenas os atributos que de fato devem ser passados pelo cliente.
 
 A permissão para transformar um usuário em Admin será feito posteriormente numa lógica seguindo a regra para tal. 
 Como anotamos o id da nossa classe Usuario com @GeneratedValue, ele será gerado automaticamente, não sendo assim necessario neste momento.
@@ -70,7 +70,7 @@ Dessa forma teremos como atributos da nossa classe UsuarioDTO apenas nome, email
 ![Modelo de Classes](/img/posts/2020-08-09-falando-sobre-dto/figura4.jpg)
 
 
-Agora sim podemos, em vez de, receber um Usuario com todos os atributos, receber um UsuarioDTO com apenas os atributos necessários para a criação do usuário.
+Agora sim podemos, em vez de, receber um Usuario com todos os atributos, iremos receber um UsuarioDTO com apenas os atributos necessários para a criação do usuário.
 
 ![Modelo de Classes](/img/posts/2020-08-09-falando-sobre-dto/figura5.jpg)
 
@@ -95,7 +95,7 @@ Para podermos utilizar o modelMapper em nosso projeto precisamos adicionar sua d
 ## Como funciona
 
 O Model Mapper, entre outros, possui um método chamado map(), que espera receber dois parâmetros. O primeiro seria o objeto que estamos querendo converter e o segundo, a classe destino.
-Recebidos os dois parâmetros, estes serão analisados ​​para determinar quais propriedades correspondem implicitamente de acordo com uma estratégia de correspondência e outra configuração. Traduzindo... serão checadas quais propriedades o objeto de origem têm em comum com a classe de destino e mapeando de acordo com essas correspondências. Dessa forma criaremos um método específico para fazer essa conversão. No nosso exemplo ficará assim:
+Recebidos os dois parâmetros, estes serão analisados ​​para determinar quais propriedades correspondem implicitamente de acordo com uma estratégia de correspondência e outra configuração. Traduzindo... serão checadas quais propriedades o objeto de origem têm em comum com a classe de destino, mapeando de acordo com essas correspondências. Dessa forma criaremos um método específico para fazer essa conversão. No nosso exemplo ficará assim:
 
 ![Modelo de Classes](/img/posts/2020-08-09-falando-sobre-dto/figura10.jpg)
 
@@ -109,7 +109,7 @@ Porém ainda temos um problema. Tanto a classe Usuario, como UsuarioDTO, possuem
 ![Modelo de Classes](/img/posts/2020-08-09-falando-sobre-dto/figura12.jpg)
 
 
-Assim como fizemos com o UsuarioDTO , precisaremos agora converter um Usuario em UsuarioRespostaDTO. De forma similar criaremos um método para isso:
+Assim como fizemos com o UsuarioDTO, precisaremos agora converter um Usuario em UsuarioRespostaDTO. De forma similar criaremos um método para isso:
 
 ![Modelo de Classes](/img/posts/2020-08-09-falando-sobre-dto/figura13.jpg)
 
@@ -122,7 +122,7 @@ Por fim o retorno do método salvar() do nosso Controller será:
 ## Conclusão
 
 Este post tentou explicar a ideia central do padrão de projeto DTO, mostrar sua utilidade e a forma de manipular os dados recebidos e enviados na comunicação servidor – cliente.
-Existem outras formas de fazer a conversão entidade – DTO. Como a idéia central era explicar sobre o DTO, esses outras formas não foram abordadas nesse post. Deixe seu comentário caso você queira u post específico sobre esse tema.
+Existem outras formas de fazer as conversões entre entidade – DTO. Essas outras formas não foram abordadas nesse post mas podemos falar delas posteriormente. Deixe seu comentário caso você queira um post específico sobre esse tema.
 
 ## Links Interessantes:
 - [Dev Media](https://www.devmedia.com.br/diferenca-entre-os-patterns-po-pojo-bo-dto-e-vo/28162)
