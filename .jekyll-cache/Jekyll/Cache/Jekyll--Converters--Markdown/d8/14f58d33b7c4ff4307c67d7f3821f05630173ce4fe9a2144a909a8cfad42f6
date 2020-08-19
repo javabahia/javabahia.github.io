@@ -1,10 +1,37 @@
-I"4<p><img src="/img/nosqlba/youtube-com-ponte.png" alt="" /></p>
+I"�<p><img src="/img/nosqlba/youtube-com-ponte.png" alt="" /></p>
 
 <p>Ontem tivemos um marco muito importante para nossa comunidade, inauguramos o canal do youtube do Java Bahia com uma live com <a href="https://www.linkedin.com/in/rponte/" target="\_blank">Rafael Ponte</a>, e vocês puderem conhecer um pouco sobre um dos nossos palestrantes. Rafael, veio como um contra-ponto ao NoSQL, justamente para nos trazermos a lembrança que não devemos abordar soluções Nosql como bala de prata ou excluir todos nossos bancos relacionais.</p>
 
 <p>Ontem, um dos nossos apoiadores, a UCSAL também abriu seu semestre com um evento de boas vindas, durante a live. Professor Osvaldo falou um pouco sobre os projetos da Universidade, bem como o curso.</p>
 
-<p>O evento foi transmitido no <a href="https://www.youtube.com/watch?v=G0nViPCrE_o" target="\_blank">youtube no Canal do Java Bahia</a>.</p>
+<p>Um resumo do que foi discutido na live:</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=22s">0:22 - Apresentação e boas vindas</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=180s">3:00 - Apresentação do Rafael Ponte</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=352s">5:52 - Rafael utiliza o Nosql?</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=510s">8:30 - Já pensou em utilizar o NoSql?</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=790s">13:10 - Utilizar ou não frameworks ORM?</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=1009s">16:49 - Quando vale a pena usar NoSql?</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=1100s">18:20 - E quando o NoSql é melhor em apenas pontos específicos, usar o relacional?</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=1339s">23:13 - Em consultas muito complexas e custosas, vale a pena partir para o SQL nativo?</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=1535s">25:35 - Soluções mercadológicas x Desenvolvedores</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=1826s">30:26 - Consultas “custosas” com JPA</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=2190s">36:30 - Será que o 5G, onde vc baixa Gigas em milissegundos vai acabar com o SPA?</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=2298s">38:18 - As empresas tendem a migrar para o banco NoSql ou preferem investir no processamento e estruturação desses dados?</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=2501s">41:41 - Kafka (parte 1)</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=2696s">44:56 - Iniciantes deveriam focar nos fundamentos antes de explorar outras opções como o NoSql?</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=2837s">47:17 - NoSql vai morrer nos próximos anos?</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=2991s">49:51 - Back End for Front End Pattern (BFF)</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=3082s">51:22 - Qual a escala necessária para justificar usar o NoSql?</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=3180s">53:00 - Kafka (parte 2)</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=3285s">54:45 - BFF e GraphQL</a></li>
+  <li><a href="https://www.youtube.com/watch?v=G0nViPCrE_o&amp;t=3383s">56:23 - Considerações Finais</a></li>
+</ul>
+
+<p><a href="https://www.youtube.com/watch?v=G0nViPCrE_o" target="\_blank">Link para a transmissão, para quem perdeu.</a>.</p>
+
+<p>O nosso próximo esquenta será em 26/08 (quarta-feira), 19h, com <a href="https://www.linkedin.com/in/guilherme-bernal-58666777/" target="\_blank">Guilherme Bernal</a>. <a href="https://www.youtube.com/watch?v=59ptT6WIbD0" target="\_blank">Link para lembrete no Youtube</a>.</p>
 
 <h2 id="patrocínio">Patrocínio</h2>
 
