@@ -62,6 +62,18 @@
         <a href="{{ site.podcast }}" class="iconify"><span class="iconify" data-icon="uil:microphone" data-inline="false"></span></a>
       </li>
       {% else %} {% endif %}
+
+      {% if site.linkedin %}
+      <li class="social-profiles-item">
+        <a href="{{ site.linkedin }}" class="iconify"><span class="ion ion-logo-linkedin"></span></a>
+      </li>
+      {% else %} {% endif %}
+
+      {% if site.github %}
+      <li class="social-profiles-item">
+        <a href="{{ site.github }}" class="iconify"><span class="ion ion-logo-github"></span></a>
+      </li>
+      {% else %} {% endif %}
     </ul>
   </div>
 

@@ -1,0 +1,120 @@
+I"�$<h1 id="dto--objeto-de-transferencia-de-dados">DTO – Objeto de Transferencia de Dados</h1>
+
+<h2 id="ideia-do-post">Ideia do Post</h2>
+
+<p>A ideia deste post é apresentar o conceito do Padrão DTO e as conversões entre entidades internas da aplicação e os DTOs externos publicados de volta para o cliente.</p>
+
+<h2 id="padrão-de-arquitetura">Padrão de arquitetura</h2>
+
+<p>O <strong>wikipedia</strong> define padrão de arquitetura como:
+ “<em>…uma solução geral e reutilizável para um problema que ocorre com frequência em arquitetura de software dentro de um determinado contexto….</em>”</p>
+
+<p>Um Padrão de arquitetura é uma solução genérica que pode ser repetida de uma forma geral para um problema comum no design de software. Como o próprio nome sugere, não é algo acabado que pode ser transformado diretamente em algum tipo de código. É um modelo ou uma forma de resolver determinado problema que pode ser usado em várias situações diferentes. 
+Nesse post iremos falar um pouco sobre um padrão de arquitetura bastante utilizado no desenvolvimento de aplicações.</p>
+
+<h2 id="dto--objeto-de-transferencia-de-dados-1">DTO – Objeto de Transferencia de Dados</h2>
+
+<p>Padrão <strong>Objeto de Transferência de Dados</strong> (do inglês, <strong>Data transfer object</strong> design pattern, ou simplesmente DTO) é um padrão de arquitetura de objetos que agregam e encapsulam dados para transferência.</p>
+
+<p>Diferente do que ocorre com os objetos de negócio e os objetos de acesso a dados (DAO), o DTO não possui qualquer tipo de comportamento. A sua função é obter e armazenar dados.
+Quando estamos trabalhando com uma interface remota, cada chamada ao servidor pode custar muito tempo de processamento, a depender da quantidade de dados. Com o DTO, podemos filtrar quais dados serão transmitidos e assim reduzir esse problema.</p>
+
+<p>O DTO é bastante utilizado também quando não queremos expor todos os dados da nossa camada de persistência mas precisamos exibir ao nosso cliente estes mesmos dados.
+Vamos focar nosso post nessa linha de raciocício.</p>
+
+<h2 id="entendendo-o-contexto-da-aplicação">Entendendo o contexto da aplicação</h2>
+
+<p>Utilizaremos como exemplo uma API REST criada com Spring Boot e que possui uma área de cadastro de usuários no sistema.</p>
+
+<p>Essa é a classe que representa os usuários na nossa API:</p>
+
+<p><img src="/img/posts/2020-08-09-falando-sobre-dto/figura1.jpg" alt="Modelo de Classes" /></p>
+
+<p>A parte em que queremos focar, do nosso Controller de usuários, ficou assim:</p>
+
+<p><img src="/img/posts/2020-08-09-falando-sobre-dto/figura2.jpg" alt="Modelo de Classes" /></p>
+
+<p>O método responsável pela criação de um usuário na nossa aplicação espera como parâmetro um objeto do tipo Usuario. Este será recebido num formato Json, no corpo da requisição, passará pela nossa regra de negócio na camada Service e posteriormente será persistido no banco de dados na nossa camada repository (Esses passos foram abstraídos no exemplo e nas imagens mas eles estão lá).</p>
+
+<p>Nesse momento começamos a perceber uma falha grave de segurança da nossa aplicação. Analisando nossa classe Usuario, veremos que ela possui um atributo do tipo booleano, “Admin”, inicializada com o valor “false”.</p>
+
+<p><img src="/img/posts/2020-08-09-falando-sobre-dto/figura3.jpg" alt="Modelo de Classes" /></p>
+
+<p>Logo, caso seja passado o valor “true” para este parâmetro na requisição, qualquer um poderá se tornar administrador da nossa aplicação. 
+A possibilidade de tornar um usuário em administrador não deve ser algo acessível a qualquer um. Exige uma lógica, um tratamento individual na nossa aplicação, seguindo regras que nós como os desenvolvedores do projeto iremos estabelecer. Sendo assim, o atributo “Admin” não deve ser considerado como um possível parâmetro de entrada a ser recebido por meio deste tipo de requisição.</p>
+
+<p>Aliás, se tivéssemos uma classe apenas com os atributos essenciais para a criação de um usuário, não correríamos esse tipo de risco. Poderíamos usá-la para receber os parâmetros, e assim manipulá-los da forma que quisermos.</p>
+
+<p>A ideia do DTO é essa.</p>
+
+<p>Vamos criar uma classe que, seguindo a convenção, se chamará UsuarioDTO e vamos dizer que esperamos um objeto desse tipo como parâmetro do método salvar() do nosso UsuarioController. 
+Nesta classe vamos usar apenas os atributos que de fato devem ser passados pelo cliente.</p>
+
+<p>A permissão para transformar um usuário em Admin será feito posteriormente numa lógica seguindo a regra para tal. 
+Como anotamos o id da nossa classe Usuario com @GeneratedValue, ele será gerado automaticamente, não sendo assim necessario neste momento.</p>
+
+<p>Dessa forma teremos como atributos da nossa classe UsuarioDTO apenas nome, email e senha:</p>
+
+<p><img src="/img/posts/2020-08-09-falando-sobre-dto/figura4.jpg" alt="Modelo de Classes" /></p>
+
+<p>Agora sim podemos, em vez de, receber um Usuario com todos os atributos, iremos receber um UsuarioDTO com apenas os atributos necessários para a criação do usuário.</p>
+
+<p><img src="/img/posts/2020-08-09-falando-sobre-dto/figura5.jpg" alt="Modelo de Classes" /></p>
+
+<p>Só que agora temos um novo problema. O método salvar() do nosso UsuarioService, espera um Usuario como parâmetro, e não um UsuarioDTO. Isso é simples de resolver e existem diversas formas de fazer isso. Podemos falar sobre isso num outro post. Neste post aqui nós iremos fazer a conversão DTO – Entity utilizando a biblioteca ModelMapper.</p>
+
+<p><a href="http://modelmapper.org/javadoc/">DOC ModelMapper</a></p>
+
+<h2 id="adicionando-o-model-mapper-ao-nosso-projeto">Adicionando o Model Mapper ao nosso projeto</h2>
+
+<p>Para podermos utilizar o modelMapper em nosso projeto precisamos adicionar sua dependência no pom.xml:</p>
+
+<p><img src="/img/posts/2020-08-09-falando-sobre-dto/figura6.jpg" alt="Modelo de Classes" /></p>
+
+<p>É necessário também definirmos o bean ModelMapper em nossa configuração do Spring:</p>
+
+<p><img src="/img/posts/2020-08-09-falando-sobre-dto/figura7.jpg" alt="Modelo de Classes" /></p>
+
+<h2 id="como-funciona">Como funciona</h2>
+
+<p>O Model Mapper, entre outros, possui um método chamado map(), que espera receber dois parâmetros. O primeiro seria o objeto que estamos querendo converter e o segundo, a classe destino.
+Recebidos os dois parâmetros, estes serão analisados ​​para determinar quais propriedades correspondem implicitamente de acordo com uma estratégia de correspondência e outra configuração. Traduzindo… serão checadas quais propriedades o objeto de origem têm em comum com a classe de destino, mapeando de acordo com essas correspondências. Dessa forma criaremos um método específico para fazer essa conversão. No nosso exemplo ficará assim:</p>
+
+<p><img src="/img/posts/2020-08-09-falando-sobre-dto/figura10.jpg" alt="Modelo de Classes" /></p>
+
+<p>E nosso salvar() do UsuarioController ficará dessa forma:</p>
+
+<p><img src="/img/posts/2020-08-09-falando-sobre-dto/figura11.jpg" alt="Modelo de Classes" /></p>
+
+<p>Porém ainda temos um problema. Tanto a classe Usuario, como UsuarioDTO, possuem o atributo senha. Dessa forma ao enviarmos um Usuario ou até mesmo um UsuarioDTO para o Cliente como resposta a requisição, a senha deste ficará visível gerando uma nova falha de segurança. Quando enviamos uma resposta, queremos passar as informações do usuário para o cliente sem informar a senha. Como podemos fazer isso? É isso mesmo. Vamos criar um novo DTO e esse será exclusivo para respostas ao cliente. O nome dessa classe será UsuarioRespostaDTO e ficará assim:</p>
+
+<p><img src="/img/posts/2020-08-09-falando-sobre-dto/figura12.jpg" alt="Modelo de Classes" /></p>
+
+<p>Assim como fizemos com o UsuarioDTO, precisaremos agora converter um Usuario em UsuarioRespostaDTO. De forma similar criaremos um método para isso:</p>
+
+<p><img src="/img/posts/2020-08-09-falando-sobre-dto/figura13.jpg" alt="Modelo de Classes" /></p>
+
+<p>Por fim o retorno do método salvar() do nosso Controller será:</p>
+
+<p><img src="/img/posts/2020-08-09-falando-sobre-dto/figura14.jpg" alt="Modelo de Classes" /></p>
+
+<h2 id="conclusão">Conclusão</h2>
+
+<p>Este post tentou explicar a ideia central do padrão de projeto DTO, mostrar sua utilidade e a forma de manipular os dados recebidos e enviados na comunicação servidor – cliente.
+Existem outras formas de fazer as conversões entre entidade – DTO. Essas outras formas não foram abordadas nesse post mas podemos falar delas posteriormente. Deixe seu comentário caso você queira um post específico sobre esse tema.</p>
+
+<h2 id="links-interessantes">Links Interessantes:</h2>
+<ul>
+  <li><a href="https://www.devmedia.com.br/diferenca-entre-os-patterns-po-pojo-bo-dto-e-vo/28162">Dev Media</a></li>
+  <li><a href="http://modelmapper.org/">Model Mapper</a></li>
+  <li><a href="https://www.baeldung.com/entity-to-and-from-dto-for-a-java-spring-application">Baeldung</a></li>
+</ul>
+
+<h2 id="montival-junior-estudante-de-desenvolvimento-java">Montival Junior (Estudante de Desenvolvimento Java)</h2>
+
+<ul>
+  <li><a href="https://github.com/MonthAlcantara">Github</a></li>
+  <li><a href="https://www.linkedin.com/in/montivaljunior">Linkedin</a></li>
+  <li><a href="https://monthalcantara.github.io/">Blog pessoal</a></li>
+</ul>
+:ET
