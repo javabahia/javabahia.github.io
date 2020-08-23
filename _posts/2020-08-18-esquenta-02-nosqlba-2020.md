@@ -11,7 +11,10 @@ tags:   [nosqlba, nosql, javabahia,comunidade, evento]
 
 Como esquenta para o NosqlBA 2020 que será em 16/09, traremos um dos palestrantes, [Guilherme Bernal](https://www.linkedin.com/in/guilherme-bernal-58666777/){:target="\_blank"}, para falarmos um pouco de cases com Nosql e lições sobre os bancos não relacionais.
 
-O esquenta será transmitido no [youtube no Canal do Java Bahia](https://bit.ly/3kLT7B5){:target="\_blank"} sob o comando de nosso hoster [Ivan Queiroz](https://www.linkedin.com/in/ivanqueiroz/){:target="\_blank"}. 
+O esquenta será transmitido via Youtube, Facebook e Twitter, sob o comando de nosso hoster [Ivan Queiroz](https://www.linkedin.com/in/ivanqueiroz/){:target="\_blank"}. 
+
+- [Youtube](https://bit.ly/3kLT7B5){:target="\_blank"} 
+- [Facebook](https://bit.ly/3hmGx9p){:target="\_blank"} 
 
 ## Patrocínio
 
