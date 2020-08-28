@@ -14,7 +14,7 @@ Como esquenta para o NosqlBA 2020 que será em 16/09, traremos um dos palestrant
 O esquenta será transmitido via Youtube e Facebook, sob o comando de nosso hoster [Ivan Queiroz](https://www.linkedin.com/in/ivanqueiroz/){:target="\_blank"}. 
 
 - [Youtube](https://www.youtube.com/watch?v=dfQ8JHzJSME){:target="\_blank"} 
-- [Facebook](){:target="\_blank"} 
+- [Facebook](https://bit.ly/3hEp4sW){:target="\_blank"} 
 
 ## Patrocínio
 
