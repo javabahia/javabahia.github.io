@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Esquenta NosqlBA 2020 com Guilherme Bernal"
+title:  "Esquenta 02 NosqlBA 2020 com Guilherme Bernal"
 date:   2020-08-18 20:30:00 +0300
 image:  javaba.png
 author: Antonio Lazaro

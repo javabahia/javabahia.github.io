@@ -1,17 +1,20 @@
 ---
 layout: post
-title:  "Esquenta 01 NosqlBA 2020 com Rafael Ponte"
-date:   2020-08-06 07:30:00 +0300
+title:  "Esquenta 03 NosqlBA 2020 com Raulino"
+date:   2020-08-28 13:30:00 +0300
 image:  javaba.png
 author: Antonio Lazaro
 tags:   [nosqlba, nosql, javabahia,comunidade, evento]
 ---
 
-![](/img/nosqlba/esquenta-rafael-ponte.jpeg)
+![](/img/nosqlba/esquenta-raulino-neto.jpeg)
 
-Como evento de esquenta para o NosqlBA 2020 que será em 16/09, traremos um dos palestrantes, [Rafael Ponte](https://www.linkedin.com/in/rponte/){:target="\_blank"}, para falarmos um pouco de cases com Nosql e lições sobre os bancos não relacionais.
+Como esquenta para o NosqlBA 2020 que será em 16/09, traremos um dos palestrantes, [Raulino Neto](ttps://www.linkedin.com/in/raulinoneto/){:target="\_blank"}, para falarmos um pouco de cases com Nosql e lições sobre os bancos não relacionais.
 
-O evento será transmitido no [youtube no Canal do Java Bahia,assina lá](https://www.youtube.com/channel/UCgxsVLafg65Z7TBWX0t5CqA){:target="\_blank"}.
+O esquenta será transmitido via Youtube e Facebook, sob o comando de nosso hoster [Ivan Queiroz](https://www.linkedin.com/in/ivanqueiroz/){:target="\_blank"}. 
+
+- [Youtube](https://www.youtube.com/watch?v=dfQ8JHzJSME){:target="\_blank"} 
+- [Facebook](){:target="\_blank"} 
 
 ## Patrocínio
 
@@ -33,11 +36,11 @@ O evento será transmitido no [youtube no Canal do Java Bahia,assina lá](https:
 </div>
 
 
-## Link pro evento
+## Link para o NosqlBA 2020 (16/09/2020)
 
 [Link para o evento.](https://www.youtube.com/watch?v=9a5-SFX2x6w){:target="\_blank"}
 
-Não precisará de inscrição
+Inscrição somente é obrigatória para quem quer participar dos sorteios e os alunos da UCSAL que precisam de certificado.
 
 # Sobre o NoSQLBa
 
@@ -61,8 +64,6 @@ Mais informações no [site do evento](http://www.nosqlba.com/2020/index.html){:
 ## Próximas lives de esquenta antes do evento:
 
 Data | Horário | Palestrante | Título | Formato
-26/08 (quarta-feira) | 19h | Guilherme Bernal| Falando um pouco sobre Nosql. Cases e lições. | (bate papo de 20-40 minutos)
-02/09 (quarta-feira) | 19h | Raulino Neto | Falando um pouco sobre Nosql. Cases e lições. | (bate papo de 20-40 minutos)
 09/09 (quarta-feira) | 19h | Christiano Milfont | Falando um pouco sobre Nosql. Cases e lições. | (bate papo de 20-40 minutos)
 
 
