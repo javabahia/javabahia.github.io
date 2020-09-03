@@ -1,13 +1,35 @@
-I"6<p><img src="/img/nosqlba/esquenta-raulino-neto.jpeg" alt="" /></p>
+I"}<p><img src="/img/nosqlba/youtube-com-raulino-neto.png" alt="" /></p>
 
-<p>Como esquenta para o NosqlBA 2020 que será em 16/09, traremos um dos palestrantes, <a href="ttps://www.linkedin.com/in/raulinoneto/" target="\_blank">Raulino Neto</a>, para falarmos um pouco de cases com Nosql e lições sobre os bancos não relacionais.</p>
+<p>Faltam apenas 2 semanas para o NosqlBA 2020. Não se inscreveu ainda? As inscrições são gratuitas e podem ser feitas no Sympla através <a href="https://www.sympla.com.br/nosqlba-2020__921068" target="\_blank">deste link.</a></p>
 
-<p>O esquenta será transmitido via Youtube e Facebook, sob o comando de nosso hoster <a href="https://www.linkedin.com/in/ivanqueiroz/" target="\_blank">Ivan Queiroz</a>.</p>
+<p>Ontem, 02/09, tivemos a terceira live do Esquenta do NosqlBA 2020 com <a href="https://www.linkedin.com/in/guilherme-bernal-58666777/" target="\_blank">Guilherme Bernal, CTO da Cubos</a>, e vocês puderem conhecer um pouco sobre um dos nossos palestrantes. Foi em um formato de papo em que Raulino falou sobre sua carreira, bem como um pouco de suas experiências com bancos Nosql.</p>
+
+<p>Um resumo do que foi discutido na live (esse trabaalho incrível foi feito por <a href="https://www.linkedin.com/in/montivaljunior" target="\_blank">Montival Junior</a> e também está disponível no link da live.</p>
 
 <ul>
-  <li><a href="https://www.youtube.com/watch?v=dfQ8JHzJSME" target="\_blank">Youtube</a></li>
-  <li><a href="" target="\_blank">Facebook</a></li>
+  <li>00:04 - Inicio da transmissão (Somente áudio)</li>
+  <li>01:33 - Apresentação do Raulino (Somente áudio)</li>
+  <li>02:34 - Raulino entra na live</li>
+  <li>04:27 - Raulino se apresenta</li>
+  <li>13:38 - A quanto tempo Raulino trabalha com nosql?</li>
+  <li>16:04 - Amazon DynamoDB e linguagens de programação</li>
+  <li>17:48 - Linguagem Go</li>
+  <li>21:30 - Problemas enfrentados na utilização do DynamoDB</li>
+  <li>23:50 - Recados para Raulino (Parte 01)</li>
+  <li>25:58 - Experiências com outros nosqls além do DynamoDB</li>
+  <li>28:29 - Desvantagens do nosql</li>
+  <li>33:19 - Recados para Raulino (Parte 02)</li>
+  <li>35:32 - Como funciona a questão de referenciar os dados em nosql?</li>
+  <li>40:51 - Já passou por algum caso mau adotado de nosql</li>
+  <li>46:24 - Sobre estudos e experimentar coisas novas</li>
+  <li>49:23 - Recados para Raulino (Parte 03)</li>
+  <li>55:34 - Raulino fala sobre a palestra do nosqlBA (dia 16/09)</li>
+  <li>01:00:00 - Encerramento</li>
 </ul>
+
+<p><a href="https://www.youtube.com/watch?v=dfQ8JHzJSME" target="\_blank">Link para a transmissão, para quem perdeu.</a>.</p>
+
+<p>O nosso próximo esquenta será em 09/09 (próxima, quarta-feira), 19h, com <a href="https://www.linkedin.com/in/cmilfont/" target="\_blank">Christiano Milfont</a>. <a href="https://www.youtube.com/watch?v=o0ySctnC418" target="\_blank">Link para lembrete no Youtube</a>. Teremos transmissão também pela Página do Java Bahia no Facebook.</p>
 
 <h2 id="patrocínio">Patrocínio</h2>
 
@@ -25,11 +47,11 @@
     </div>  
 </div>
 
-<h2 id="link-para-o-nosqlba-2020-16092020">Link para o NosqlBA 2020 (16/09/2020)</h2>
+<h2 id="link-pro-evento">Link pro evento</h2>
 
 <p><a href="https://www.youtube.com/watch?v=9a5-SFX2x6w" target="\_blank">Link para o evento.</a></p>
 
-<p>Inscrição somente é obrigatória para quem quer participar dos sorteios e os alunos da UCSAL que precisam de certificado.</p>
+<p>Não precisará de inscrição</p>
 
 <h1 id="sobre-o-nosqlba">Sobre o NoSQLBa</h1>
 
@@ -80,7 +102,7 @@
 
 <p>Mais informações no <a href="http://www.nosqlba.com/2020/index.html" target="\_blank">site do evento</a></p>
 
-<h2 id="próximas-lives-de-esquenta-antes-do-evento">Próximas lives de esquenta antes do evento:</h2>
+<h2 id="próxima-live-de-esquenta-antes-do-evento">Próxima live de esquenta antes do evento:</h2>
 
 <table>
   <tbody>
