@@ -60,10 +60,4 @@ Horário | Título | Palestrante
 
 Mais informações no [site do evento](http://www.nosqlba.com/2020/index.html){:target="\_blank"}
 
-## Próximas lives de esquenta antes do evento:
-
-Data | Horário | Palestrante | Título | Formato
-09/09 (quarta-feira) | 19h | Christiano Milfont | Falando um pouco sobre Nosql. Cases e lições. | (bate papo de 20-40 minutos)
-
-
 Mais informações serão divulgadas aqui no site do Java Bahia ou nas redes sociais do grupo e no site do evento. Nos ajudem divulgando o evento!
