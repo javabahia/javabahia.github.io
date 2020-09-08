@@ -35,7 +35,7 @@ O evento será transmitido no [youtube no Canal do Java Bahia,assina lá](https:
 
 ## Link pro evento
 
-[Link para o evento.](https://www.youtube.com/watch?v=9a5-SFX2x6w){:target="\_blank"}
+[Link para o evento.](https://www.youtube.com/watch?v=jEkV1B79C2g){:target="\_blank"}
 
 Não precisará de inscrição
 

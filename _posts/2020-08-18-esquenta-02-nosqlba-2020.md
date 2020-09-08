@@ -38,7 +38,7 @@ O esquenta será transmitido via Youtube e Facebook, sob o comando de nosso host
 
 ## Link para o NosqlBA 2020 (16/09/2020)
 
-[Link para o evento.](https://www.youtube.com/watch?v=9a5-SFX2x6w){:target="\_blank"}
+[Link para o evento.](https://www.youtube.com/watch?v=jEkV1B79C2g){:target="\_blank"}
 
 Inscrição somente é obrigatória para quem quer participar dos sorteios e os alunos da UCSAL que precisam de certificado.
 
