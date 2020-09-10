@@ -11,7 +11,7 @@ tags:   [nosqlba, nosql, javabahia,comunidade, evento]
 
 Faltam apenas 2 semanas para o NosqlBA 2020. Não se inscreveu ainda? As inscrições são gratuitas e podem ser feitas no Sympla através [deste link.](https://www.sympla.com.br/nosqlba-2020__921068){:target="\_blank"}
 
-Ontem, 02/09, tivemos a terceira live do Esquenta do NosqlBA 2020 com [Guilherme Bernal, CTO da Cubos](https://www.linkedin.com/in/guilherme-bernal-58666777/){:target="\_blank"}, e vocês puderem conhecer um pouco sobre um dos nossos palestrantes. Foi em um formato de papo em que Raulino falou sobre sua carreira, bem como um pouco de suas experiências com bancos Nosql.
+Ontem, 02/09, tivemos a terceira live do Esquenta do NosqlBA 2020 com [Raulino Neto](https://www.linkedin.com/in/raulinoneto/){:target="\_blank"}, e vocês puderem conhecer um pouco sobre um dos nossos palestrantes. Foi em um formato de papo em que Raulino falou sobre sua carreira, bem como um pouco de suas experiências com bancos Nosql.
 
 Um resumo do que foi discutido na live (esse trabaalho incrível foi feito por [Montival Junior](https://www.linkedin.com/in/montivaljunior){:target="\_blank"} e também está disponível no link da live.
 
