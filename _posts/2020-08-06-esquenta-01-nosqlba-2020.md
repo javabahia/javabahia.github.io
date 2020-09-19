@@ -7,7 +7,7 @@ author: Antonio Lazaro
 tags:   [nosqlba, nosql, javabahia,comunidade, evento]
 ---
 
-![](/img/nosqlba/esquenta-rafael-ponte.jpeg)
+![](/img/nosqlba/2020/esquenta-rafael-ponte.jpeg)
 
 Como evento de esquenta para o NosqlBA 2020 que será em 16/09, traremos um dos palestrantes, [Rafael Ponte](https://www.linkedin.com/in/rponte/){:target="\_blank"}, para falarmos um pouco de cases com Nosql e lições sobre os bancos não relacionais.
 
@@ -16,18 +16,18 @@ O evento será transmitido no [youtube no Canal do Java Bahia,assina lá](https:
 ## Patrocínio
 
 <div>
-    <img src="/img/nosqlba/alura-dark-1060px.png" class="img-thumbnail logo" alt="Alura">
-    <img src="/img/nosqlba/cdc.png" class="img-thumbnail logo" alt="Casa do código">
+    <img src="/img/nosqlba/2020/alura-dark-1060px.png" class="img-thumbnail logo" alt="Alura">
+    <img src="/img/nosqlba/2020/cdc.png" class="img-thumbnail logo" alt="Casa do código">
 </div>
 
 ## Apoio 
 <div class="container">
     <div class="row text-center">
-        <img src="/img/nosqlba/globodotcom.png" class="img-thumbnail logo" 
+        <img src="/img/nosqlba/2020/globodotcom.png" class="img-thumbnail logo" 
         alt="Globo.com">
-        <img src="/img/nosqlba/logo_infoucsal.jpg" class="img-thumbnail logo" 
+        <img src="/img/nosqlba/2020/logo_infoucsal.jpg" class="img-thumbnail logo" 
         alt="DA Info UCSAL">
-        <img src="/img/nosqlba/logo-ucsal.png" class="img-thumbnail logo" 
+        <img src="/img/nosqlba/2020/logo-ucsal.png" class="img-thumbnail logo" 
         alt="UCSAL (Universidade Católica do Salvador)">
     </div>  
 </div>

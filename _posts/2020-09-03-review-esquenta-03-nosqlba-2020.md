@@ -7,7 +7,7 @@ author: Antonio Lazaro e Montival Junior
 tags:   [nosqlba, nosql, javabahia,comunidade, evento]
 ---
 
-![](/img/nosqlba/youtube-com-raulino-neto.png)
+![](/img/nosqlba/2020/youtube-com-raulino-neto.png)
 
 Faltam apenas 2 semanas para o NosqlBA 2020. Não se inscreveu ainda? As inscrições são gratuitas e podem ser feitas no Sympla através [deste link.](https://www.sympla.com.br/nosqlba-2020__921068){:target="\_blank"}
 
@@ -42,18 +42,18 @@ O nosso próximo esquenta será em 09/09 (próxima, quarta-feira), 19h, com [Chr
 ## Patrocínio
 
 <div>
-    <img src="/img/nosqlba/alura-dark-1060px.png" class="img-thumbnail logo" alt="Alura">
-    <img src="/img/nosqlba/cdc.png" class="img-thumbnail logo" alt="Casa do código">
+    <img src="/img/nosqlba/2020/alura-dark-1060px.png" class="img-thumbnail logo" alt="Alura">
+    <img src="/img/nosqlba/2020/cdc.png" class="img-thumbnail logo" alt="Casa do código">
 </div>
 
 ## Apoio 
 <div class="container">
     <div class="row text-center">
-        <img src="/img/nosqlba/globodotcom.png" class="img-thumbnail logo" 
+        <img src="/img/nosqlba/2020/globodotcom.png" class="img-thumbnail logo" 
         alt="Globo.com">
-        <img src="/img/nosqlba/logo_infoucsal.jpg" class="img-thumbnail logo" 
+        <img src="/img/nosqlba/2020/logo_infoucsal.jpg" class="img-thumbnail logo" 
         alt="DA Info UCSAL">
-        <img src="/img/nosqlba/logo-ucsal.png" class="img-thumbnail logo" 
+        <img src="/img/nosqlba/2020/logo-ucsal.png" class="img-thumbnail logo" 
         alt="UCSAL (Universidade Católica do Salvador)">
     </div>  
 </div>

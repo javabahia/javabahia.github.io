@@ -7,7 +7,7 @@ author: Antonio Lazaro e Montival Junior
 tags:   [nosqlba, nosql, javabahia,comunidade, evento]
 ---
 
-![](/img/nosqlba/youtube-com-ponte.png)
+![](/img/nosqlba/2020/youtube-com-ponte.png)
 
 Ontem tivemos um marco muito importante para nossa comunidade, inauguramos o canal do youtube do Java Bahia com uma live com [Rafael Ponte](https://www.linkedin.com/in/rponte/){:target="\_blank"}, e vocês puderem conhecer um pouco sobre um dos nossos palestrantes. Rafael, veio como um contra-ponto ao NoSQL, justamente para nos trazermos a lembrança que não devemos abordar soluções Nosql como bala de prata ou excluir todos nossos bancos relacionais.
 
@@ -44,18 +44,18 @@ O nosso próximo esquenta será em 26/08 (quarta-feira), 19h, com [Guilherme Ber
 ## Patrocínio
 
 <div>
-    <img src="/img/nosqlba/alura-dark-1060px.png" class="img-thumbnail logo" alt="Alura">
-    <img src="/img/nosqlba/cdc.png" class="img-thumbnail logo" alt="Casa do código">
+    <img src="/img/nosqlba/2020/alura-dark-1060px.png" class="img-thumbnail logo" alt="Alura">
+    <img src="/img/nosqlba/2020/cdc.png" class="img-thumbnail logo" alt="Casa do código">
 </div>
 
 ## Apoio 
 <div class="container">
     <div class="row text-center">
-        <img src="/img/nosqlba/globodotcom.png" class="img-thumbnail logo" 
+        <img src="/img/nosqlba/2020/globodotcom.png" class="img-thumbnail logo" 
         alt="Globo.com">
-        <img src="/img/nosqlba/logo_infoucsal.jpg" class="img-thumbnail logo" 
+        <img src="/img/nosqlba/2020/logo_infoucsal.jpg" class="img-thumbnail logo" 
         alt="DA Info UCSAL">
-        <img src="/img/nosqlba/logo-ucsal.png" class="img-thumbnail logo" 
+        <img src="/img/nosqlba/2020/logo-ucsal.png" class="img-thumbnail logo" 
         alt="UCSAL (Universidade Católica do Salvador)">
     </div>  
 </div>
