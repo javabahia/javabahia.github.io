@@ -30,7 +30,7 @@ Link para slides das palestras:
 - [Escalando seu Sistema com Fila em Banco por Rafael Ponte](https://speakerdeck.com/rponte/fila-em-banco-escalando-sua-aplicacao-com-banco-relacional){:target="\_blank"}.)
 - [No SQL? Posso usar?](https://www.slideshare.net/antoniolazarobr/no-sql-oqueeissokey){:target="\_blank"}
 - [Product Ops, evoluindo o NOC para o BOC das áreas de negócio por Christiano Milfont](https://docs.google.com/presentation/d/1AmSfTnDx0OoeQls6XSSXNOp0DNnmcZEaoO48NlluncM/edit?usp=sharing){:target="\_blank"}
-- [Construindo um banco NoSQL do zero" por Guilherme Bernal](){:target="\_blank"}
+- [Construindo um banco NoSQL do zero" por Guilherme Bernal](/img/nosqlba/2020/talk/talk-guilherme.pdf){:target="\_blank"}
 - [Github Projeto do banco feito por Guilhereme em Crystal](https://github.com/lbguilherme/rethinkdb-lite){:target="\_blank"}
 
 Alguns momentos do evento:
